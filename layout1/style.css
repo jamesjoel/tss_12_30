@@ -1,0 +1,158 @@
+body{
+	background-color: #FEFEFE;
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+}
+#header{
+	background-color: #010101;
+	height: 80px;
+	width: 100%;
+}
+#slider{
+	background-color: #B2C52B;
+	height: 200px;
+	width: 100%;
+}
+#content{
+	min-height: 600px;
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+}
+#footer{
+	background-color: #010101;
+	height: 120px;
+	width: 100%;
+}
+.wrapper{
+	width: 870px;
+	margin: 0 auto;
+}
+#logo{
+	height: 80px;
+	width: 250px;
+	/*background-color: red;*/
+	float: left;
+}
+#menu{
+	float: right;
+	height: 80px;
+	width: 500px;
+	/*background-color: blue;*/
+}
+#logo h1{
+	color: #B2C52B;
+	text-transform: uppercase;
+	margin: 0;
+	padding-top: 10px;
+}
+#logo p{
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+	font-size: 14px;
+}
+#menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#menu ul li{
+	float: left;
+}
+#menu ul li a{
+	display: block;
+	background-color: #323232;
+	color: #FFF;
+	text-decoration: none;
+	padding: 13px 20px;
+	margin: 18px 0px;
+	font-weight: bold;
+	/*border-left: 1px solid #CCC;*/
+
+}
+#menu ul li a:hover{
+	background-color: #B2C52B;
+}
+.first_a{
+	border-left: none !important;
+	border-radius: 5px 0 0 5px;
+}
+.last_a{
+	border-radius: 0 5px 5px 0;
+}
+#left-slider{
+	width: 500px;
+	height: 200px;
+	/*background-color: red;*/
+	float: left;
+}
+#right-slider{
+	float: left;
+	width: 340px;
+	height: 170px;
+	/*background-color: blue;*/
+	padding: 15px;
+}
+#right-slider img{
+	height: 170px;
+	width: 340px;
+}
+#left-slider h1{
+	color: #323232;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+#left-slider p{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	text-align: justify;
+}
+#left-slider span{
+	color: #FFF;
+}
+.btn{
+	display: block;
+	float: right;
+	background-color: #646d1b;
+	color: #FFF;
+	text-decoration: none;
+	padding: 8px 15px;
+	border-radius: 3px;
+}
+.content-box{
+	height: 280px;
+	width: 250px;
+	/*background-color: red;*/
+	margin: 10px;
+	float: left;
+	padding: 10px;
+}
+.content-box-left{
+	height: 80px;
+	width: 80px;
+	background-color: blue;
+	float: left;
+}
+.content-box-right{
+	float: left;
+	height: 80px;
+	width: 160px;
+	padding: 0px 5px;
+	/*background-color: green;*/
+}
+.content-box-right h3{
+	margin: 0;
+	padding: 5px;
+	text-align: justify;
+	font-size: 16px;
+}
+.content-box-bottom{
+	height: 200px;
+	width: 250px;
+	/*background-color: green;*/
+	text-align: justify;
+
+}

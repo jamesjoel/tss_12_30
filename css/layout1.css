@@ -1,0 +1,26 @@
+body{
+	background-color: #01ABBC;
+	font-family: Helvetica;
+	margin: 0;
+	padding: 0;
+}
+#header{
+	width: 100%;
+	height: 80px;
+	background-color: #000;
+}
+#content{
+	width: 100%;
+	min-height: 600px;
+	height: auto;
+
+}
+#footer{
+	width: 100%;
+	height: 250px;
+	background-color: #FFF;
+}
+.wrapper{
+	width: 870px;
+	margin: 0 auto;  /* align center to a div   */
+}
