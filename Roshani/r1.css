@@ -1,0 +1,25 @@
+body{
+	background-color:  #a36060;
+	margin: 0;
+	padding: 0;
+}
+#p1{
+	color: yellow;
+	background-color: #282c33;
+	font-size: 50px;
+	height: 80px;
+	width: 100%;
+}
+#p2{
+	color: #fff;
+	font-family:times new roman;
+	height: 600px;
+	width: 100%;
+	/*background-color: red;*/
+}
+#p3{
+	
+	height: 400px;
+	width: 100%;
+	background-color: gray;
+}

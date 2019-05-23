@@ -1,0 +1,18 @@
+#r1{
+	color: #8B31AF;
+	background-color: #AF3140;
+}
+p{
+	color: gray;
+	background-color: pink;
+	font-size: 30px;
+}
+#r2{
+	color: #8C696E;
+	background-color: #52DF1C;
+}
+.tb1{
+	color: red;
+	background-color: yellow;
+	font-size: 40px;
+}
