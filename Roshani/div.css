@@ -1,0 +1,25 @@
+body{
+	background-color: #fff;
+	margin: 0px;
+	padding: 0px;
+}
+#header{
+	background-color: #425F9C;
+	width: 100%;
+	height: 80px;
+}
+#content{
+	background-color: #D8DDEB;
+	width: 100%;
+	height: 600px;
+}
+#footer{
+	background-color: #fff;
+	width:100%;
+	height: 400px;
+}
+.wrapper{
+	background-color: #fff;
+	width: 1010px;
+	margin: 0 auto;
+}

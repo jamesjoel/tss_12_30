@@ -1,0 +1,45 @@
+body{
+	background-color: #FE1234;
+	margin: 0px;
+	padding: 0px;
+}
+ #d1{
+	height: 400px;
+	width: 400px;
+	background-color: red;
+	background-size: 40px 40px;
+	background-position: left top;
+	float: left;
+	}
+	p{
+		text-align: justify;
+		text-decoration: line-through;
+		text-transform: capitalize;
+		float: left;
+
+	}
+	h1{
+		color: yellow;
+		font-size: 50px;
+		font-weight:bold;
+		font-family: helvetika;
+		float: left;
+
+	}
+	#d2{
+		background-color: green;
+		height: 400px;
+		width: 400px;
+		float: left;
+
+
+	}
+	#d3{
+		background-image: url("3.jpg");
+		background-repeat: no-repeat;
+		background-color: gray;
+		height: 400px;
+		width:400px;
+		float: left;
+
+	}
