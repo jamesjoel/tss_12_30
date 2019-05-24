@@ -1,0 +1,14 @@
+.hello{
+	background-color: red;
+	height:auto;
+
+}
+.hi{
+	background-color: blue;
+	height:80px;
+}
+.hello1{
+	background-image: url(../1.jpeg);
+	background-size:100%;
+	height:500px;
+}
