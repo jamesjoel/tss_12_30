@@ -7,17 +7,15 @@ body{
 	height: 400px;
 	width: 400px;
 	background-color: red;
-	background-image: url("3.jpg");
-	background-repeat: no-repeat;
-	background-size: 400px 400px;
+	background-size: 40px 40px;
 	background-position: left top;
-	float: right;
+	float: left;
 	}
 	p{
 		text-align: justify;
 		text-decoration: line-through;
 		text-transform: capitalize;
-		float: right;
+		float: left;
 
 	}
 	h1{
@@ -34,5 +32,14 @@ body{
 		width: 400px;
 		float: left;
 
+
+	}
+	#d3{
+		background-image: url("3.jpg");
+		background-repeat: no-repeat;
+		background-color: gray;
+		height: 400px;
+		width:400px;
+		float: left;
 
 	}
