@@ -1,0 +1,29 @@
+#div-item1{
+	 background-image: url(class10b.jpg);
+	  background-size: 100% 100%;
+	   background-repeat: no-repeat;
+}
+#div-item1:hover{
+	background-image: url(class10.jpg);
+}
+#div-item2{
+ 	background-image: url(class11.jpg);
+  	background-size: 100% 100%; 
+  	background-repeat: no-repeat;
+}
+#div-item2:hover{
+	background-image: url(class11a.jpg);
+	background-size: 100% 100%; 
+  	background-repeat: no-repeat;
+}
+#div-item3{
+	background-image: url(class12.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+#div-item3:hover{
+	background-image: url(class12a.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+	
