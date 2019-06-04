@@ -19,10 +19,58 @@
 			<div class="col-md-3 col-sm-5 col-5   offset-md-5 offset-sm-3 offset-3">
 				<ul class="nav">
 			 		<li class="nav-item">
-			  			<a  class="nav-link btn btn-success mt-2" href="#">login</a>
+			  			<a href="#" class="text-light mt-2  btn btn-success " data-toggle="modal" data-target="#myModal">
+ 			Login <i class="fa fa-lock" aria-hidden="true"></i></a>
+
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+   <!--  -->
+      <div class="modal-header row">
+
+      		<div class="col-md-5" style="height: 400px;"><h3>Login</h3>
+      				<p>Get access to your Orders, Wishlist and Recommendations</p> 
+      				<img src="cart.jpg" style="height: 280px; width: 100%">
+      		</div>
+      		
+      		<div class="col-md-7">
+      			<button class="close " data-dismiss="modal">&times;</button>
+      			<table cellpadding="10" cellspacing="0">
+      				<tr>
+      					<td></td>
+      				</tr>
+      				<tr>
+      					<td><input style="border-style: none;" type="text" name="" placeholder="Enter Email & Mobile Number"><hr/></td>
+      				</tr>
+      				<<tr>
+      					<td><input style="border-style: none;" type="passward" name="" placeholder=" Enter Your Passward"><hr/></td>
+      				</tr>
+      				<tr>
+      					<td><input type="submit" value="Login" style="border-style:none; width: 250px; height: 50px; background-color: #FB6200; " style class="bnt "></td>
+      				</tr>
+      				<tr>
+      					<td><input type="submit" value="Request OTP" style="border-style:none; width: 250px; height: 50px; box-shadow: 5px 5px 5px gray; " style class="bnt btn-light text-success"></td>
+      				</tr>
+      				<tr>
+      					<td></td>
+      				</tr>
+      				<tr>
+      					<td><p class="text-primary">New to Flipkart? Create account</p></td>
+      				</tr>
+      			</table>
+      		</div>
+      		
+  
+      </div>
+
+    </div>
+  </div>
+</div>
 			  		</li>&nbsp;&nbsp;
 			 		<li class="nav-item">
-			  			<a  class="nav-link btn btn-success mt-2" href="#">sing up</a>
+			  			<a  class="nav-link btn btn-success mt-2" href="#"> sing up <i class="fa fa-user-o" aria-hidden="true"></i></a>
 			  		</li>
 				</ul>
 			</div>
@@ -42,7 +90,7 @@
 					<a class="nav-link text-light ml-4" href="#">login & Sing UP</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link text-light ml-4" href="#">abut</a>
+					<a class="nav-link text-light ml-4" href="#">about</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link text-light ml-4 dropdown-toggle " href="#" data-toggle="dropdown" >more</a>
@@ -55,7 +103,7 @@
  				</li>
 			</ul>
 		</div>
-			<a href="#" class="text-light" data-toggle="modal" data-target="	#myModal"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+			<a href="#" class="text-light" data-toggle="modal" data-target="#myModal"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
  			My Cart (0)</a>
 
 
@@ -63,7 +111,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
 
-   
+   <!--  -->
       <div class="modal-header">
         <h4 class="modal-title">Modal Heading</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -92,45 +140,55 @@
 	<div style="clear: both;"></div><br/>
 	<div class="container-fluid ">
 		<div class="row">
-			<div class="col-sm-6 col-md-2 col-4">
-				<div class="Card ">
-					<div class="header"><h5>New Arrival</h2></div>
-					<div class="body"><h5> &nbsp; &nbsp;My Choice</h5>
-						<h5><a href="#">flipcat product</a></h5>
-						<h5><a href="#">oxl product</a></h5>
-						<h5><a href="#">radmi product</a></h5>
-						<h5><a href="#">apple product</a></h5>
-					</div>
-					<div class="footer">
-						<h5> &nbsp; &nbsp;your choice</h5>
-						<div>
-							<h5><a href="#">marriage product</a></h5>
-							<h5><a href="#">party product</a></h5>
-							<h5><a href="#">birthay product</a></h5>
-							<h5><a href="#">children product</a></h5>
-						</div>
-					</div>
-				</div>
+			<div class="col-sm-6 col-md-3 col-6">
+				<ul class="list-group">
+					<li class="list-group-item"><h4><span class="badge badge-primary">Product Categorys</span></h4></li>
+				  <li class="list-group-item d-flex justify-content-between align-items-center">
+				    Mobile
+				    <span class="badge badge-primary badge-pill">12</span>
+				  </li>
+				  <li class="list-group-item d-flex justify-content-between align-items-center">
+				    Home Appliance
+				    <span class="badge badge-primary badge-pill">50</span>
+				  </li>
+				  <li class="list-group-item d-flex justify-content-between align-items-center">
+				    Fashion Mens
+				    <span class="badge badge-primary badge-pill">99</span>
+				  </li>
+				  <li class="list-group-item d-flex justify-content-between align-items-center">
+				    Fashion Womens
+				    <span class="badge badge-primary badge-pill">99</span>
+				  </li>
+				    <li class="list-group-item d-flex justify-content-between align-items-center">
+				    Fashion Mens
+				    <span class="badge badge-primary badge-pill">99</span>
+				  </li>
+				  <li class="list-group-item d-flex justify-content-between align-items-center">
+				    Fashion Womens
+				    <span class="badge badge-primary badge-pill">99</span>
+				  </li>
+			
+				</ul>
 			</div>
-			<div class="col-sm-6 col-4 col-md-2 offset-md-1">
+			<div class="col-sm-6 col-6 col-md-3  ">
 				<div class="card" id="card1">
-				    <div class="card-header"><h5><span class="badge badge-success">Add Product</span></h5></div>
+				    <div class="card-header"><h3><span class="badge badge-success">Add Product</span></h3></div>
 				    <div class="card-body " style="height: 220px; background-image: url(classu1.jpg); background-size: 100% 220px;">
 				    </div>
 				    <div class="card-footer"><p><b> style Mobile Cover</b> RS.<del> 180</del> Jush&#8377;149</p></div>
 				</div>
 			</div>
-		    <div class="col-sm-6 col-6 col-md-2 offset-md-1">
+		    <div class="col-sm-6 col-6 col-md-3 ">
 				<div class="card">
-				    <div class="card-header"><h5><span class="badge badge-success">Add Product</span></h5></div>
+				    <div class="card-header"><h3><span class="badge badge-success">Add Product</span></h3></div>
 				    <div class="card-body" style="height: 220px; background-image: url(classu2.jpg); background-size: 100% 220px;">
 				    </div>
 				    <div class="card-footer"><p><b> style Mobile Cover</b> RS.<del> 180</del> Jush&#8377;149</p></div>
 				</div>
 			</div>
-			<div class="col-sm-6 col-6 col-md-2 offset-md-1">
+			<div class="col-sm-6 col-6 col-md-3 ">
 				<div class="card">
-				    <div class="card-header"><h5><span class="badge badge-success">Add Product</span></h5></div>
+				    <div class="card-header"><h3><span class="badge badge-success">Add Product</span></h3></div>
 				    <div class="card-body" style="height: 220px; background-image: url(classu3.jpg); background-size: 100% 220px;">
 				    </div>
 				    <div class="card-footer"><p><b> style Mobile Cover</b> RS.<del> 180</del> Jush&#8377;149</p></div>
@@ -140,45 +198,55 @@
 	</div><br/>
 		<div class="container-fluid ">
 		<div class="row">
-			<div class="col-sm-6 col-md-2 col-6">
-				<div class="Card ">
-					<div class="header"><h5>New Arrival</h2></div>
-					<div class="body"><h5> &nbsp; &nbsp;My Choice</h4>
-						<h5><a href="#">flipcat product</a></h5>
-						<h5><a href="#">oxl product</a></h5>
-						<h5><a href="#">radmi product</a></h5>
-						<h5><a href="#">apple product</a></h5>
-					</div>
-					<div class="footer">
-						<h5> &nbsp; &nbsp;your choice</h5>
-						<div>
-							<h5><a href="#">marriage product</a></h5>
-							<h5><a href="#">party product</a></h5>
-							<h5><a href="#">birthay product</a></h5>
-							<h5><a href="#">children product</a></h5>
-						</div>
-					</div>
-				</div>
+			<div class="col-sm-6 col-md-3 col-6 ">
+				<li class="list-group-item d-flex justify-content-between align-items-center">
+				    Fashion Mens
+				    <span class="badge badge-primary badge-pill">99</span>
+				  </li>
+				  <li class="list-group-item d-flex justify-content-between align-items-center">
+				    Fashion Womens
+				    <span class="badge badge-primary badge-pill">99</span>
+				  </li>
+				    <li class="list-group-item d-flex justify-content-between align-items-center">
+				    Fashion Mens
+				    <span class="badge badge-primary badge-pill">99</span>
+				  </li>
+				  <li class="list-group-item d-flex justify-content-between align-items-center">
+				    Fashion Womens
+				    <span class="badge badge-primary badge-pill">99</span>
+				  </li>
+				   <li class="list-group-item d-flex justify-content-between align-items-center">
+				    Fashion Womens
+				    <span class="badge badge-primary badge-pill">99</span>
+				  </li>
+				    <li class="list-group-item d-flex justify-content-between align-items-center">
+				    Fashion Mens
+				    <span class="badge badge-primary badge-pill">99</span>
+				  </li>
+				  <li class="list-group-item d-flex justify-content-between align-items-center">
+				    Fashion Womens
+				    <span class="badge badge-primary badge-pill">99</span>
+				  </li>
 			</div>
-			<div class="col-sm-6 col-6 col-md-2 offset-md-1">
+			<div class="col-sm-6 col-6 col-md-3 ">
 				<div class="card">
-				    <div class="card-header"><h5><span class="badge badge-success">Add Product</span></h5></div>
+				    <div class="card-header"><h3><span class="badge badge-success">Add Product</span></h3></div>
 				    <div class="card-body" style="height: 220px; background-image: url(classu4.jpg); background-size: 100% 220px;">
 				    </div>
 				    <div class="card-footer"><p><b> style Mobile Cover</b> RS.<del> 180</del> Jush&#8377;149</p></div>
 				</div>
 			</div>
-		    <div class="col-sm-6 col-6 col-md-2 offset-md-1">
+		    <div class="col-sm-6 col-6 col-md-3 ">
 				<div class="card">
-				    <div class="card-header"><h5><span class="badge badge-success">Add Product</span></h5></div>
+				    <div class="card-header"><h3><span class="badge badge-success">Add Product</span></h3></div>
 				    <div class="card-body" style="height: 220px; background-image: url(classu5.jpg); background-size: 100% 220px;">
 				    </div>
 				    <div class="card-footer"><p><b> style Mobile Cover</b> RS.<del> 180</del> Jush&#8377;149</p></div>
 				</div>
 			</div>
-			<div class="col-sm-6 col-6 col-md-2 offset-md-1">
+			<div class="col-sm-6 col-6 col-md-3 ">
 				<div class="card">
-				    <div class="card-header"><h5><span class="badge badge-success">Add Product</span></h5></div>
+				    <div class="card-header"><h3><span class="badge badge-success">Add Product</span></h3></div>
 				    <div class="card-body" style="height: 220px; background-image: url(classu6.jpg); background-size: 100% 220px;">
 				    </div>
 				    <div class="card-footer"><p><b> style Mobile Cover</b> RS.<del> 180</del> Jush&#8377;149</p></div>
@@ -193,12 +261,43 @@
 		<div  class="row" style="height: 100px;">
 			<div class="col-md-4 col-sm-6 col-6 offset-md-5 offset-sm-4 offset-4"><h1>Latest Items</h1></div>
 		</div>
-		<div  class="row" style="height:400px;">
-			<div id="div-item1" class="col-md-2 col-sm-3 col-4 clearfix  offset-md-1  ">
+		<div  class="row" style="height:500px; overflow: hidden;">
+			<div id="div-item1" class="col-md-2 col-sm-3 col-4 clearfix  offset-md-1">
+				<div class="card product ">
+					<div class="view">
+						Quet view
+					        </div>
+						<img class="card-img-top" src="class10b.jpg">
+							
+						<div class="card-body">
+							<p class="text-dark"><b> smart look</b></p>
+							<p class="text-success">form  &#x20B9; 450</p>
+						</div>
+				</div>
 			</div>
-				<div id="div-item2" class="col-md-2 col-sm-3 col-4 offset-md-2 " >
+				<div id="div-item2" class="col-md-2 col-sm-3 col-4 offset-md-2">
+					<div class="card product">
+					<div class="view">
+						Quet view
+					</div>
+						<img class="card-img-top" src="class11.jpg">
+						<div class="card-body">
+							<p class="text-dark"><b> smart look</b></p>
+							<p class="text-success">form  &#x20B9; 450</p>
+						</div>
+				</div>
 			</div>
-				<div id="div-item3" class="col-md-2 col-sm-3 col-4 offset-md-2 ">
+				<div id="div-item3" class="col-md-2 col-sm-3 col-4 offset-md-2">
+					<div class="card product">
+					<div class="view">
+						Quet view
+					</div>
+						<img class="card-img-top" src="class12.jpg">
+						<div class="card-body">
+							<p class="text-dark"><b> smart look</b></p>
+							<p class="text-success">form  &#x20B9; 450</p>
+						</div>
+				</div>
 			</div>
 		</div>
 
@@ -241,61 +340,46 @@ This collection of tutorials features top-notch techniques on how to create web 
 				<button class="btn btn-success btn-lg">Create Account</button>
 			</div>
 		</div>
-		<div class="row bg-dark" style="height: 250px;">
-			<div class="col-md-7 bg-dark">
-				<div class="row text-light">
-					<div class="col-md-2 offset-md-1 ">
-						<h4>About</h4>
-						<a href="#" class="text-light" style="font-size: 15px;" >Contact Us</a>
-						<a href="#" class="text-light" style="font-size: 15px;" >About Us</a>
-						<a href="#" class="text-light" style="font-size: 15px;" >Flikart Stories</a>
-						<a href="#" class="text-light"  style="font-size: 15px;">press</a>
-						<a href="#" class="text-light"  style="font-size: 15px;">more</a>
-						<a href="#" class="text-light" style="font-size: 15px;">Shipping</a>
-						<a href="#" class="text-light" style="font-size: 15px;">About</a>						
-					</div>
-					<div class="col-md-2 offset-md-1">
-						<h4>Help</h4>
-						<a href="#" class="text-light" style="font-size: 15px;">Payment</a>
-						<a href="#" class="text-light" style="font-size: 15px;">Shipping</a>
-						<a href="#" class="text-light" style="font-size: 15px;">About</a>
-						<a href="#" class="text-light" style="font-size: 15px;">FAQ</a>
-						<a href="#" class="text-light" style="font-size: 15px;">return</a>
-						<a href="#" class="text-light" style="font-size: 15px;">shops</a>
-						<a href="#" class="text-light" style="font-size: 15px;">About</a>
-						<a href="#" class="text-light" style="font-size: 15px;">FAQ</a>
-						<a href="#" class="text-light" style="font-size: 15px;">return</a>
-						<a href="#" class="text-light" style="font-size: 15px;">shops</a>
-					</div>
- 						<div class="col-md-2 offset-md-1">
-						<h4>Policy</h4>
-						<a href="#" class="text-light" style="font-size: 15px;">Payment</a> 
-						<a href="#" class="text-light" style="font-size: 15px;">Shipping</a>
-						<a href="#" class="text-light" style="font-size: 15px;">About</a>
-						<a href="#" class="text-light" style="font-size: 15px;">FAQ</a>  
-						<a href="#" class="text-light" style="font-size: 15px;">return</a>
-						<a href="#" class="text-light" style="font-size: 15px;">shops</a>
-						<a href="#" class="text-light" style="font-size: 15px;">About</a>
-						<a href="#" class="text-light" style="font-size: 15px;">FAQ</a>
-						<a href="#" class="text-light" style="font-size: 15px;">return</a>
-						<a href="#" class="text-light" style="font-size: 15px;">shops</a>
-					</div>
-						<div class="col-md-2 offset-md-1">
-						<h4>Social</h4>
-						<a href="#" class="text-light" style="font-size: 15px;">Contact Us</a>
-						<a href="#" class="text-light" style="font-size: 15px;" >About Us</a>
-						<a href="#" class="text-light" style="font-size: 15px;">Flikart Stories</a>
-						<a href="#" class="text-light" style="font-size: 15px;">press</a>
-						<a href="#" class="text-light" style="font-size: 15px;">more</a>
-						<a href="#" class="text-light" style="font-size: 15px;">Shipping</a>
-						<a href="#" class="text-light" style="font-size: 15px;">About</a>
-						
+		<div class="row bg-dark text-light" style="height: 250px;">
+			<div class="col-md-3 bg-dark">
+			<h4>My Shopping Site</h4>
+				<p>301, Gold Star Tower, M. G. Road, Indore <br /><i class="fa fa-phone" aria-hidden="true"></i> 9893630582</p>
 
-					</div>
-				</div>
+			</div>
+			<div class="col-md-2 bg-dark">
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#">Help</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-2 bg-dark">
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#">Help</a>
+					</li>
+				</ul>
 			</div>
 			<div class="col-md-5">
-				<div class="row">
+				<div class="row bg-dark">
 					<div class="col-md-6">
 				<form>
 					<div class="form-group">
@@ -305,7 +389,7 @@ This collection of tutorials features top-notch techniques on how to create web 
 					
 					<div class="form-group">
 						<label for="form-group" class="text-light">Email</label>
-						<input class="form-control" type="text" name="" placeholder="Last Name">
+						<input class="form-control" type="text" name="" placeholder="Email Address">
 					</div>
 				</form>
 				<br/>
@@ -319,7 +403,7 @@ This collection of tutorials features top-notch techniques on how to create web 
 					    </div>
 					<div class="form-group">
 						<label for="form-group" class="text-light">Passward</label>
-						<input class="form-control" type="text" name="" placeholder="Last Name">
+						<input class="form-control" type="text" name="" placeholder="Passward">
 					</div>
 			    </form>
 			    <br/>
