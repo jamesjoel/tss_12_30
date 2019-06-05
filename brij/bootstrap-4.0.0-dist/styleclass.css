@@ -1,29 +1,23 @@
-#div-item1{
-	 background-image: url(class10b.jpg);
-	  background-size: 100% 100%;
-	   background-repeat: no-repeat;
-}
-#div-item1:hover{
-	background-image: url(class10.jpg);
-}
-#div-item2{
- 	background-image: url(class11.jpg);
-  	background-size: 100% 100%; 
-  	background-repeat: no-repeat;
-}
-#div-item2:hover{
-	background-image: url(class11a.jpg);
-	background-size: 100% 100%; 
-  	background-repeat: no-repeat;
-}
-#div-item3{
-	background-image: url(class12.jpg);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-}
-#div-item3:hover{
-	background-image: url(class12a.jpg);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-}
+
 	
+.view{
+	background-color: rgba(65, 65, 65, 0);
+	
+	text-align:center;
+	font-size: 20px;
+	position:absolute;
+	width:100%;
+	color: transparent;
+	font-weight: bold; 
+	
+}
+.product .view:hover{
+	color: #ffff;
+	background-color: rgba(65, 65, 65, .8);
+	display:block;
+	transition: 1s;
+
+}
+.product{
+	box-shadow: 5px 5px 5px gray;
+}
