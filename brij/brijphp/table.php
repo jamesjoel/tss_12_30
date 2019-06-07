@@ -33,6 +33,27 @@ $all=array($data,$data1,$data2);
     }
      
  }
+     foreach($all[0] as $x=>$y)
+ {
+    if($y==$all[0]["name"])
+    {
+ 
+            echo "<tr>";
+            echo "<td>".$y."</td>";
+          
+    }
+    if($y==$all[0]["age"])
+    {
+       echo "<td>".$y."</td>";
+  
+    }
+    if($y==$all[0]["city"])
+    {
+       echo "<td>".$y."</td>";
+       echo "</tr>";
+    }
+     
+}
 
 
      foreach($all[1] as $x=>$y)
