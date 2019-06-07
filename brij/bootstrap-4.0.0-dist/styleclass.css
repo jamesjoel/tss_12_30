@@ -21,3 +21,19 @@
 .product{
 	box-shadow: 5px 5px 5px gray;
 }
+#div1{
+	 min-height:250px; 
+	 height:auto;
+	  background-image: url(classnew12.jpg); 
+	  background-size:100% 100%;
+	  color: white;
+}
+
+#div1:hover{
+	background-image: url(classnew13.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	
+
+
+}

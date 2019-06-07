@@ -101,7 +101,6 @@ $all=array($data,$data1,$data2);
      
 }
 
-    
 
 ?>
  </table>
