@@ -24,13 +24,13 @@
 #div1{
 	 max-height:765px; 
 	 height:auto;
-	  background-image: url(classnew14a.jpg); 
+	  background-image: url(../image/classnew14a.jpg); 
 	  background-size:100% 100%;
 	  color: white;
 }
 
 #div1:hover{
-	background-image: url(classnew15.jpg);
+	background-image: url(../image/classnew15.jpg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	
