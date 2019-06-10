@@ -35,6 +35,10 @@
 	background-size: 110% 565px;
 	background-repeat: no-repeat;
 
-
-
+}
+.navbar_link:hover{
+	background-color: green;
+}
+.navbar_link_active{
+	background-color: green;
 }
