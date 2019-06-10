@@ -22,18 +22,19 @@
 	box-shadow: 5px 5px 5px gray;
 }
 #div1{
-	 max-height:765px; 
+	 max-height:565px; 
 	 height:auto;
 	  background-image: url(../image/classnew14a.jpg); 
 	  background-size:100% 100%;
 	  color: white;
+	  	background-color: #F3AC00;
 }
 
 #div1:hover{
-	background-image: url(../image/classnew15.jpg);
-	background-size: 100% 100%;
+	background-image: url(../image/classnewnew2.jpg);
+	background-size: 110% 565px;
 	background-repeat: no-repeat;
-	
+
 
 
 }
