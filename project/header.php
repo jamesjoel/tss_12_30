@@ -1,3 +1,7 @@
+<?php
+// print_r($_SERVER);
+$url = $_SERVER['REQUEST_URI'];
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,16 +42,16 @@
 	<div id="mymenu" class="collapse navbar-collapse">
 		<ul class="navbar navbar-nav">
 			<li class="nav-item">
-				<a href="index.php" class="nav-link">Home</a>
+				<a href="index.php" class="nav-link <?php if(strstr($url, "index.php")){ echo "nav-link-active"; } ?>">Home</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link">About</a>
+				<a href="about.php" class="nav-link <?php if(strstr($url, "about.php")){ echo "nav-link-active"; } ?>">About</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link">Contact</a>
+				<a href="contact.php" class="nav-link <?php if(strstr($url, "contact.php")){ echo "nav-link-active"; } ?>">Contact</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link">Help</a>
+				<a href="help.php" class="nav-link <?php if(strstr($url, "help.php")){ echo "nav-link-active"; } ?>">Help</a>
 			</li>
 		</ul>
 	</div>
