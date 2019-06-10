@@ -30,35 +30,14 @@ include("slider.php");
 		<div class="row">
 			<?php include("left-menu.php"); ?>
 			<div class="col-md-9">
-<<<<<<< HEAD
 				<div class="row">
-					<h3>User Login</h3>
-					<div class="card">
-						
-=======
-			<h3>User Login</h3>
-				<div class="row">
-					<div class="col-md-6 offset-md-3">
-						<div class="card mb-4 shadow">
-							<div class="card-header">
-								<h2>Login</h2>
-							</div>
-							<div class="card-body">
-								<div class="form-group">
-									<label>Username</label>
-									<input type="text" class="form-control">
-								</div>
-								<div class="form-group">
-									<label>Password</label>
-									<input type="password" class="form-control">
-								</div>
-							</div>
-							<div class="card-footer">
-								<input type="submit" value="Login" class="btn btn-primary">
-							</div>
-						</div>
->>>>>>> 4394784ec948cb73695faaf41d8b03126b217684
-					</div>
+					<h3>About Page</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 			</div>
 		</div>

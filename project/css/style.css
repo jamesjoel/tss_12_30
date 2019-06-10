@@ -37,3 +37,12 @@
 .my-dark{
 	background-color: #282828;
 }
+.navbar .nav-link:hover{
+	background-color: #000;
+}
+.nav-link-active{
+	background-color: #000 !important;
+
+}
+
+
