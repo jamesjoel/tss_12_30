@@ -22,7 +22,7 @@ include("header.php");
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-3 col-3  bg-light ml-5  " style="height: 390px">
-				<div class="row bg-light text-dark mt-2 ml-1" style="height: 50px;"><h4 style="font-weight: bold;">Recharges, bills $ food</h4></div>
+				<div class="row bg-light text-dark mt-2 ml-1" style="height: 50px;"><h4 style="font-weight: bold;">Under ₹400 | Free</h4></div>
 
 				<div class="row bg-success ml-2" style="height: 150px; width:92%; ">
 
