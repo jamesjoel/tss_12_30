@@ -30,13 +30,11 @@ include("slider.php");
 		<div class="row">
 			<?php include("left-menu.php"); ?>
 			<div class="col-md-9">
-<<<<<<< HEAD
-				<div class="row">
-					<h3>User Registraion</h3>
-=======
+
+
 			<h3>User Registration</h3>
 				<div class="row">
-					<div class="col-md-6 offset-md-3">
+					<div class="col-md-8 offset-md-2">
 						<form action="save.php" method="post">
 						<div class="card mb-4 shadow">
 							<div class="card-header">
@@ -95,7 +93,7 @@ include("slider.php");
 						</div>
 					</div>
 					</form>
->>>>>>> 4394784ec948cb73695faaf41d8b03126b217684
+
 				</div>
 			</div>
 		</div>

@@ -30,15 +30,10 @@ include("slider.php");
 		<div class="row">
 			<?php include("left-menu.php"); ?>
 			<div class="col-md-9">
-<<<<<<< HEAD
-				<div class="row">
-					<h3>User Login</h3>
-					<div class="card">
-						
-=======
+
 			<h3>User Login</h3>
 				<div class="row">
-					<div class="col-md-6 offset-md-3">
+					<div class="col-md-8 offset-md-2">
 						<div class="card mb-4 shadow">
 							<div class="card-header">
 								<h2>Login</h2>
@@ -57,7 +52,6 @@ include("slider.php");
 								<input type="submit" value="Login" class="btn btn-primary">
 							</div>
 						</div>
->>>>>>> 4394784ec948cb73695faaf41d8b03126b217684
 					</div>
 				</div>
 			</div>
