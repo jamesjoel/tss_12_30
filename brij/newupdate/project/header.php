@@ -209,8 +209,8 @@ $url=$_SERVER['REQUEST_URI'];
   </div>
 </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-light navbar_link " href="#" data-toggle="modal" data-target="#myModal1">& &nbsp;Sign UP</a>
+        <!-- <li class="nav-item">
+          <a class="nav-link text-light navbar_link " href="#" data-toggle="modal" data-target="#myModal1">Sign UP</a>
         
 
 <div class="modal" id="myModal1">
@@ -243,7 +243,7 @@ $url=$_SERVER['REQUEST_URI'];
               <tr>
                 <td><input style="border-style: none;" type="text" name="" placeholder="Enter Email"><hr/></td>
               </tr>
-              <<tr>
+              <tr>
                 <td><input style="border-style: none;" type="passward" name="" placeholder=" Enter Your Passward"><hr/></td>
               </tr>
               <tr>
@@ -266,11 +266,16 @@ $url=$_SERVER['REQUEST_URI'];
     </div>
   </div>
 </div>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link text-light ml-2 navbar_link <?php if(strstr($url,'about.php')){ echo "navbar_link_active";} ?>" href="signup.php">Sign Up</a>
         </li>
+
 
         <li class="nav-item">
           <a class="nav-link text-light ml-2 navbar_link <?php if(strstr($url,'about.php')){ echo "navbar_link_active";} ?>" href="about.php">about</a>
         </li>
+
         <li class="nav-item dropdown">
           <a class="nav-link text-light ml-2 dropdown-toggle navbar_link " href="#" data-toggle="dropdown" >more</a>
           <div class="dropdown-menu">

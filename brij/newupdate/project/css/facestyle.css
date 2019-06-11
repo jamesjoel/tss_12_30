@@ -1,0 +1,143 @@
+#box{
+	height: 80px;
+	width:1000px;
+	background-color: #075EA5;
+	background-image: url(4.jpg);
+	background-size: 20px 50px;
+}
+body{
+	margin: 0;
+	font-family: helvetica;
+
+}
+#color{
+	color: white;
+}
+#colorf{
+	color:white;
+}
+h1{
+	color:#FFFFFF;
+	margin:0;
+	padding:25px 0px;
+	float: left;
+	font-family:helvetica;
+}
+#box1a{
+	height: 50px;
+	width: 50px;
+	background-color: gray;
+	float: left;
+	margin:20px 10px;
+	background-image: url(fack.jpg);
+	background-size: 250px 200px;
+	background-position:67px 72px; 
+}
+#box1a:hover{
+	background-image: url(fack.jpg);
+	background-size: 250px 200px;
+	background-position: 67px 173px;
+}
+#box #box1{
+	height: 100px;
+	width: 800px
+	margin:0 auto;
+	
+}
+#box2{
+	height: 600px;
+	width: 1000px;
+	background-color:#F6F6FA;
+	background-image: url(3.abc);
+	background-size: 50% 20%;
+	background-repeat: no-repeat;
+	background-position:0px 120px; 
+}/*
+#box2 #box3{
+	height: 0px;
+	width:0px;
+	background-color:grey;
+	*/
+	
+}
+#color{
+	color: black;
+	font-weight: bold;
+	}
+#box3 #box4{
+	height: 600px;
+	width: 450px;
+	margin-left:550px; 
+	background-color:#F6F6FA;
+}
+#bold{
+	font-weight: bold;
+	color: black;
+}
+h3{
+	padding:50px 50px;
+}
+#facebook{
+	color:#124C7F;
+	float:left;
+	margin:50px -200px;
+	padding: 0px 0px;
+	font-family: helvetica;
+}
+#bold{
+	float: left;
+}
+#font{
+	font-size: 10px;
+	color: blue;
+}
+ul{
+	float:right;
+	list-style: none;
+	margin-top: 30px;
+}
+ul li{
+	float:left;
+
+}
+ul li a{
+	background-color:#5CAD4E;
+	color: blue;
+	text-decoration: none;
+	margin: 2px;
+	padding: 5px 5px;
+	border-radius: 5px;
+	font-weight: bold;
+
+}
+ul li a:hover{
+	background-color: #FFFFFF;
+	color:grey;
+}
+#b{
+	background-color: #5CAD4E;
+	color:white;
+font-size: 20px;
+border-radius: 5px;
+width: 200px;
+height: 40px;
+font-weight: bold;
+
+}
+#b:hover{
+	background-color:gray;
+	color:white;
+}
+
+.size{
+	height: 30px;
+	width: 100%;
+ border-radius: 5px;
+ font-size: 20px;
+}
+#text{
+	font-size: 50px;
+}
+#colora{
+	color: #434386;
+}
