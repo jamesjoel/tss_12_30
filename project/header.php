@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-=======
 <?php
 // print_r($_SERVER);
 $url = $_SERVER['REQUEST_URI'];
 ?>
->>>>>>> 4394784ec948cb73695faaf41d8b03126b217684
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,18 +42,7 @@ $url = $_SERVER['REQUEST_URI'];
 	<div id="mymenu" class="collapse navbar-collapse">
 		<ul class="navbar navbar-nav">
 			<li class="nav-item">
-<<<<<<< HEAD
-				<a href="index.php" class="nav-link">Home</a>
-			</li>
-			<li class="nav-item">
-				<a href="#" class="nav-link">About</a>
-			</li>
-			<li class="nav-item">
-				<a href="#" class="nav-link">Contact</a>
-			</li>
-			<li class="nav-item">
-				<a href="#" class="nav-link">Help</a>
-=======
+
 				<a href="index.php" class="nav-link <?php if(strstr($url, "index.php")){ echo "nav-link-active"; } ?>">Home</a>
 			</li>
 			<li class="nav-item">
@@ -67,7 +53,6 @@ $url = $_SERVER['REQUEST_URI'];
 			</li>
 			<li class="nav-item">
 				<a href="help.php" class="nav-link <?php if(strstr($url, "help.php")){ echo "nav-link-active"; } ?>">Help</a>
->>>>>>> 4394784ec948cb73695faaf41d8b03126b217684
 			</li>
 		</ul>
 	</div>
