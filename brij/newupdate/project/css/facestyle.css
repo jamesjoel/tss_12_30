@@ -46,7 +46,7 @@ h1{
 }
 #box2{
 	height: 600px;
-	width: 1000px;
+	width: 100%;
 	background-color:#F6F6FA;
 	background-image: url(3.abc);
 	background-size: 50% 20%;
