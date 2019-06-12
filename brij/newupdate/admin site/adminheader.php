@@ -1,9 +1,16 @@
+<?php
+// print_r($_SERVER);
+$url=$_SERVER['REQUEST_URI'];
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>admin</title>
 
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" type="text/css" href="css/adminstyle.css">
 	<link rel="stylesheet" type="text/css" href="">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
@@ -31,13 +38,13 @@
     <div class="collapse navbar-collapse justify-content-center " id="idtarget"  >
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a href="index.php" class="nav-link text-light navbar_link mr-4" >Home </a>
+          <a href="index.php" class="nav-link text-light navbar_link mr-4 nav_link_admin" >Home </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light navbar_link mr-4" href="#" data-toggle="modal" data-target="#myModal">about</a>
+          <a class="nav-link text-light navbar_link mr-4 nav_link_admin" href="#" data-toggle="modal" data-target="#myModal">about</a>
          </li>
          <li class="nav-item">
-          <a class="nav-link text-light navbar_link  mr-4" href="#" data-toggle="modal" data-target="#myModal">Help</a>
+          <a class="nav-link text-light navbar_link nav_link_admin mr-4" href="#" data-toggle="modal" data-target="#myModal">Help</a>
          </li>
      </ul>
  </div>
@@ -46,29 +53,29 @@
 	<div class="row bg-dark ">
 		<ul class="nav justify-content-center"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<li class="nav-item">
-			<a class="nav-link" href="#">Dachboard</a>
+			<a class="nav-link nav_link_admin <?php if(strstr($url,'Dachboard.php')){ echo "nav_link_admin_active";} ?>" href="#">Dachboard</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">Add Product</a>
+			<a class="nav-link nav_link_admin" href="#">Add Product</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="view_product.php">View Product</a>
+			<a class="nav-link nav_link_admin <?php if(strstr($url,'view_product.php')) { echo "nav_link_admin_active";} ?>" href="view_product.php">View Product</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">Add Category</a>
+			<a class="nav-link nav_link_admin" href="#">Add Category</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">View Category</a>
+			<a class="nav-link nav_link_admin" href="#">View Category</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">View User</a>
+			<a class="nav-link nav_link_admin" href="#">View User</a>
 		</li>
+		</li>
+		<li class="nav-item"> 
+			<a class="nav-link nav_link_admin" href="#">Setting</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">Setting</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">Logout</a>
+			<a class="nav-link nav_link_admin" href="#">Logout</a>
 		</li>
 	</ul>
 	
