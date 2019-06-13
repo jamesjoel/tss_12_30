@@ -160,56 +160,9 @@ $url=$_SERVER['REQUEST_URI'];
           <a href="index.php" class="nav-link text-light navbar_link mr-2 <?php if(strstr($url,'index.php') ) {echo "navbar_link_active";} ?>">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light navbar_link " href="#" data-toggle="modal" data-target="#myModal">Login</a>
-
-
-
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-   <!--  -->
-      <div class="modal-header row">
-
-          <div class="col-md-5" style="height: 400px;"><h3>Login</h3>
-              <p>Get access to your Orders, Wishlist and Recommendations</p> 
-              <img src="image/cart.jpg" style="height: 280px; width: 100%">
-          </div>
-          
-          <div class="col-md-7">
-            <button class="close " data-dismiss="modal">&times;</button>
-            <table cellpadding="10" cellspacing="0">
-              <tr>
-                <td></td>
-              </tr>
-              <tr>
-                <td><input style="border-style: none;" type="text" name="" placeholder="Enter Email & Mobile Number"><hr/></td>
-              </tr>
-              <<tr>
-                <td><input style="border-style: none;" type="passward" name="" placeholder=" Enter Your Passward"><hr/></td>
-              </tr>
-              <tr>
-                <td><input type="submit" value="Login" style="border-style:none; width: 250px; height: 50px; background-color: #FB6200; " style class="bnt "></td>
-              </tr>
-              <tr>
-                <td><input type="submit" value="Request OTP" style="border-style:none; width: 250px; height: 50px; box-shadow: 5px 5px 5px gray; " style class="bnt btn-light text-success"></td>
-              </tr>
-              <tr>
-                <td></td>
-              </tr>
-              <tr>
-                <td><p class="text-primary">New to Flipkart? Create account</p></td>
-              </tr>
-            </table>
-          </div>
-          
-  
-      </div>
-
-    </div>
-  </div>
-</div>
+          <a href="login.php" class="nav-link text-light navbar_link mr-2 <?php if(strstr($url,'index.php') ) {echo "navbar_link_active";} ?>">login</a>
         </li>
+        
         <!-- <li class="nav-item">
           <a class="nav-link text-light navbar_link " href="#" data-toggle="modal" data-target="#myModal1">& &nbsp;Sign UP</a>
         

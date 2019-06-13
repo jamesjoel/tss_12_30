@@ -1,5 +1,5 @@
  <?php
- print_r($_POST);
+ // print_r($_POST);
 
 $con = mysqli_connect("localhost", "root", "password", "user");
 // mysqli_connect("hostname", "username", "password", "dbname")
@@ -13,9 +13,9 @@ $d = sha1($d);
 
 
 
-$query = "INSERT INTO user (full_name,mobile,email, password) VALUES ('$a', '$b', '$c', '$d')";
+ echo $query = "INSERT INTO tableuser (full_name,mobile_no , email , password) VALUES ('$a', '$b', '$c', '$d')";
 
 mysqli_query($con, $query);
-// header("location:index.php");
+ header("location:index.php");
 ?>
 

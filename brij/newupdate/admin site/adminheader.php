@@ -56,10 +56,10 @@ $url=$_SERVER['REQUEST_URI'];
 			<a class="nav-link nav_link_admin <?php if(strstr($url,'Dachboard.php')){ echo "nav_link_admin_active";} ?>" href="#">Dachboard</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link nav_link_admin" href="#">Add Product</a>
+			<a class="nav-link nav_link_admin  <?php if(strstr($url,'view_product.php')) { echo "nav_link_admin_active";} ?>" href="add_product.php">Add Product</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link nav_link_admin <?php if(strstr($url,'view_product.php')) { echo "nav_link_admin_active";} ?>" href="view_product.php">View Product</a>
+			<a class="nav-link nav_link_admin <?php if(strstr($url,'view_product.php')) { echo "nav_link_admin_active";} ?>" href="#">View Product</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link nav_link_admin" href="#">Add Category</a>
