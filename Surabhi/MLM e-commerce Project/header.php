@@ -1,9 +1,13 @@
+<?php
+/*print_r($_SERVER);*/
+$url = $_SERVER['REQUEST_URI'];
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Krishna Marketting</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=devices-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
 	<link rel="stylesheet" type="text/css" href="css/style1.css" />
@@ -15,8 +19,8 @@
 <body class="bg-light">
 	<div class="container-fluid">
 			<ul class="nav justify-content-end">
-			<li class="nav-item">	<a class="nav-link" href="#">Login</a>	</li>
-			<li class="nav-item">	<a class="nav-link" href="#">Logup</a>	</li>
+			<li class="nav-item">	<a class="nav-link" href="login.php">Login</a>	</li>
+			<li class="nav-item">	<a class="nav-link" href="signup.php">Logup</a>	</li>
 		</ul>
 		<nav class="navbar bg-warning navbar-expand-sm navbar-light text-capitalize sticky-top">
 			<!-- <div class="col-6 col-sm-6 col-md-6"> -->
@@ -26,11 +30,18 @@
 		<!-- 	<div class="col-6 col-sm-6 col-md-6 "> -->
 				<div class="collapse navbar-collapse justify-content-end" id="menu">
 					<ul class="navbar-nav">
-						<li class="nav-item">	<a href="#" class="nav-link">Home</a></li>
-						<li class="nav-item">	<a href="#" class="nav-link">About</a></li>
-						<li class="nav-item">	<a href="#" class="nav-link">Men</a></li>
-						<li class="nav-item">	<a href="#" class="nav-link">women</a></li>
-						<li class="nav-item">	<a href="#" class="nav-link">kids</a></li>
+						<li class="nav-item">
+				<a href="index.php" class="nav-link <?php if(strstr($url, "index.php")){ echo "nav-link-active"; } ?>">Home</a>
+			</li>
+			<li class="nav-item">
+				<a href="about.php" class="nav-link <?php if(strstr($url, "about.php")){ echo "nav-link-active"; } ?>">About</a>
+			</li>
+			<li class="nav-item">
+				<a href="contact.php" class="nav-link <?php if(strstr($url, "contact.php")){ echo "nav-link-active"; } ?>">Contact</a>
+			</li>
+			<li class="nav-item">
+				<a href="help.php" class="nav-link <?php if(strstr($url, "help.php")){ echo "nav-link-active"; } ?>">Help</a>
+			</li>
 						
 						<li class="nav-item dropdown">	
 							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More</a>

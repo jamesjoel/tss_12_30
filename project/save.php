@@ -18,6 +18,6 @@ $g = $_POST['city'];
 
 $query = "INSERT INTO user (full_name, username, password, address, gender, city, contact) VALUES ('$a', '$b', '$c', '$d', '$e', '$g', '$f')";
 
-mysqli_query($con, $query);
+mysqli_query($con, $query);                      	
 header("location:login.php");
 ?>
