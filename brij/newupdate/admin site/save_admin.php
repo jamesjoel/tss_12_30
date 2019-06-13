@@ -13,9 +13,9 @@ $e = $_POST['product_Details'];
 
 
 
-echo $query = "INSERT INTO table_product (product_name , product_category , product_price , discount, details) VALUES ('$a', '$b', '$c', '$d', '$e')";
+ $query = "INSERT INTO table_product (product_name , product_category , product_price , discount, details) VALUES ('$a', '$b', '$c', '$d', '$e')";
 // die;
 
 mysqli_query($con, $query);
-// header("location:index.php");
+header("location:index.php");
 ?>
