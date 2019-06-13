@@ -23,12 +23,40 @@ $url = $_SERVER['REQUEST_URI'];
 				</div>
 				<div class="col-md-6 col-12 col-sm-12">
 					<ul class="nav justify-content-end">
-						<li class="nav-item">
-							<a href="login.php" class="nav-link text-light">Login <i class="fa fa-lock"></i></a>
-						</li>
-						<li class="nav-item">
-							<a href="signup.php" class="nav-link text-light">Signup <i class="fa fa-user"></i></a>
-						</li>
+						<?php
+						if(isset($_SESSION['is_user_logged_in']))
+						{ ?>
+
+							<li class="nav-item">
+								<a href="my_account.php" class="nav-link text-light">My Account <i class="fa fa-lock"></i></a>
+							</li>
+							<li class="nav-item">
+								<a href="logout.php" class="nav-link text-light">Logout <i class="fa fa-user"></i></a>
+							</li>
+
+
+
+						<?php
+						}
+						else
+						{ ?>
+
+							<li class="nav-item">
+								<a href="login.php" class="nav-link text-light">Login <i class="fa fa-lock"></i></a>
+							</li>
+							<li class="nav-item">
+								<a href="signup.php" class="nav-link text-light">Signup <i class="fa fa-user"></i></a>
+							</li>
+
+
+						<?php
+						}
+						?>
+
+
+
+
+						
 					</ul>
 				</div>
 			</div>
