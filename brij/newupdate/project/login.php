@@ -1,6 +1,7 @@
 <?php
 // print_r($_SERVER);
 $url=$_SERVER['REQUEST_URI'];
+session_start();
 
 ?>
 
@@ -12,7 +13,7 @@ $url=$_SERVER['REQUEST_URI'];
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+<link rel="stylesheet" type="text/css" href="css/facestyle.css">
   <link rel="stylesheet" type="text/css" href="css/styleclass.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <script type="text/javascript" src="js/jquery.js"></script>
@@ -112,7 +113,7 @@ $url=$_SERVER['REQUEST_URI'];
               </tr>
 
               <tr>
-                <td><select><option>+91</option><option>+20</option><option>+65</option><option>56</option></select> <input style="border-style: none;" type="text" name="mobile" placeholder="Mobile Number"><hr/></td>
+                <td><select><option>+91</option><option>+20</option><option>+65</option><option>56</option></select> <input style="border-style: none;" type="text" name="mobile-number" placeholder="Mobile Number"><hr/></td>
               </tr>
               
               <tr>
@@ -160,59 +161,9 @@ $url=$_SERVER['REQUEST_URI'];
           <a href="index.php" class="nav-link text-light navbar_link mr-2 <?php if(strstr($url,'index.php') ) {echo "navbar_link_active";} ?>">Home</a>
         </li>
         <li class="nav-item">
-          <a href="login.php" class="nav-link text-light navbar_link mr-2 <?php if(strstr($url,'login.php') ) {echo "navbar_link_active";} ?>">login</a>
+          <a href="login.php" class="nav-link text-light navbar_link mr-2 <?php if(strstr($url,'index.php') ) {echo "navbar_link_active";} ?>">login</a>
         </li>
-  <!--       <li class="nav-item">
-          <a class="nav-link text-light navbar_link " href="#" data-toggle="modal" data-target="#myModal">Login</a>
-
-
-
- <div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-   
-      <div class="modal-header row">
-
-          <div class="col-md-5" style="height: 400px;"><h3>Login</h3>
-              <p>Get access to your Orders, Wishlist and Recommendations</p> 
-              <img src="image/cart.jpg" style="height: 280px; width: 100%">
-          </div>
-          
-          <div class="col-md-7">
-            <button class="close " data-dismiss="modal">&times;</button>
-            <table cellpadding="10" cellspacing="0">
-              <tr>
-                <td></td>
-              </tr>
-              <tr>
-                <td><input style="border-style: none;" type="text" name="" placeholder="Enter Email & Mobile Number"><hr/></td>
-              </tr>
-              <<tr>
-                <td><input style="border-style: none;" type="passward" name="" placeholder=" Enter Your Passward"><hr/></td>
-              </tr>
-              <tr>
-                <td><input type="submit" value="Login" style="border-style:none; width: 250px; height: 50px; background-color: #FB6200; " style class="bnt "></td>
-              </tr>
-              <tr>
-                <td><input type="submit" value="Request OTP" style="border-style:none; width: 250px; height: 50px; box-shadow: 5px 5px 5px gray; " style class="bnt btn-light text-success"></td>
-              </tr>
-              <tr>
-                <td></td>
-              </tr>
-              <tr>
-                <td><p class="text-primary">New to Flipkart? Create account</p></td>
-              </tr>
-            </table>
-          </div>
-          
-  
-      </div>
-
-    </div>
-  </div>
-</div> 
-        </li> -->
+        
         <!-- <li class="nav-item">
           <a class="nav-link text-light navbar_link " href="#" data-toggle="modal" data-target="#myModal1">& &nbsp;Sign UP</a>
         
@@ -320,3 +271,104 @@ $url=$_SERVER['REQUEST_URI'];
   </div>
 </div>
     </nav>
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<form action="save" method="post">
+<head>
+  <title>the today</title>
+  <link rel="stylesheet" type="text/css" href="css/facestyle.css">
+</head>
+<body>
+  <div id="box"> <div id="box1a"></div>
+    <div id="box1"><h1>Flipkart </h1> 
+      <ul>
+        <li><a href="index.php">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contect</a></li>
+      </ul> 
+      <form action="save.php" method="post">
+      <table border="0" align="center" cellspacing="0" cellpadding="04" width="30">
+        <tr>
+          <td id="color">Email</td>
+          <td><input type="text" name="email"></td>
+        </tr>
+        <tr>
+          <td id="color">passward</td>
+          <td><input type="password" name="password"></td>
+          <td><input type="submit" value="login"></td>
+        </tr>
+        <tr> <td></td>
+          <td id="colorf">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;forgotten accoutn ?</td>
+        </tr>
+      </table>
+    </form>
+    </div>
+  </div> -->
+
+<div id="box2" style="background-image: url(image/3.abc);"><h4 id="facebook"><b>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;Flipkart helps you connect and share with <br/>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; the people in your life</b></h4>
+  
+  <div id="box3">
+    <div id="box4"><h1 id="bold">Login account</h1><br/><br/>
+<form action="auth.php" method="post">
+  <table cellpadding="10" cellspacing="0">
+            <tr>
+              <td><h2>Login Account</h2></td>
+            </tr>
+              <tr>
+                <td><input type="text" name="user_name" placeholder="Enter User Name"></td>
+              </tr>
+              <tr>
+                <td><input type="password" name="password" placeholder="Enter Your Password"></td>
+              </tr>
+              <tr>
+                <td><input class="btn btn-success" type="submit" name=""  value="login"></td>
+              </tr>
+              <tr>
+                <td>
+                <?php
+                if(isset($_SESSION['msg']))
+                {
+                  echo $_SESSION['msg'];
+                  unset($_SESSION['msg']);
+                }
+                ?>
+                </td>
+              </tr>
+              <tr>
+                <td><p class="text-primary">Already Have An Account?</p></td>
+              </tr>
+            </table>
+  </form>
+  <hr/>
+  <a href="creat.html">create a page</a>
+    </div>
+
+  </div>
+</div>
+
+<p id="colora">
+English (UK)
+हिन्दी
+मराठी
+اردو
+ਪੰਜਾਬੀ
+বাংলা
+ગુજરાતી
+தமிழ்
+తెలుగు
+മലയാളം
+ಕನ್ನಡ</p>
+<hr/><p id="colora">
+Sign UpLog InMessenger Facebook LiteFind FriendsPeople ProfilesPages Page catego riesPlaces Games Locations Marketplace Groups Instagram Local Fundraisers AboutCreate adCreate PageDevelopers Careers Privacy Cookies AdChoices TermsAccount securityLogin helpHelp Settings Activity log
+Facebook © 2019</p>
+</body>
+</form>
+</html>
+
+
+
+
+
+
