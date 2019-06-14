@@ -21,7 +21,7 @@ include("slider.php");
 									<input type="text" name="username" class="form-control" placeholder="User Name" />
 								</div>
 								<div class="form-group">
-									<input type="password" name="pass" class="form-control" placeholder=" Password" />
+									<input type="password" name="password" class="form-control" />
 								</div>
 						</div>
 						<div class="card-footer">
