@@ -5,6 +5,8 @@ if(! isset($_SESSION['is_admin_logged_in']))
 	header("location:../index.php");
 }
 include("admin_header.php");
+$query = "SELECT * FROM category";
+$result = mysqli_query($con, $query);
 ?>
 
 
@@ -27,9 +29,13 @@ include("admin_header.php");
 					<label>Product Category</label>
 					<select class="form-control" name="product_category">
 						<option>Select</option>
-						<option>Mobile</option>
-						<option>Electronics</option>
-						<option>Home Appliance</option>
+						<?php
+						while($data=mysqli_fetch_assoc($result))
+						{ ?>
+							<option><?php echo $data['category_name']; ?></option>
+						<?php
+						}
+						?>
 					</select>
 				</div>
 				<div class="form-group">
