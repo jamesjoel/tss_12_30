@@ -1,7 +1,7 @@
 <?php
 // print_r($_SERVER);
 $url=$_SERVER['REQUEST_URI'];
-session_start();
+
 include("header.php");
 ?>
 

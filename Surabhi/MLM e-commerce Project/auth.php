@@ -12,7 +12,7 @@ echo $password."<br />";
 $p= sha1($password);
 
 echo $p."<br />";
-$query = "SELECT * FROM user WHERE user_name='$username'";
+$query = "SELECT * FROM tableuser WHERE full_name='$username'";
  echo "<br />".$query;
 
 $result=mysqli_query($con, $query);
