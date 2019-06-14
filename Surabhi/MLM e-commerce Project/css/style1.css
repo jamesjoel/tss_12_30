@@ -17,9 +17,8 @@ transition:4s;
 }
 .box {
 	display: none;
-	background-color: red;
 	width:450px;
-	margin: 3.5rem 17.625rem;
+	margin: 3.5rem auto;
 	
 }
 /*.box:hover{
@@ -36,4 +35,12 @@ transition:4s;
 /*list section*/
 .card .card-header img{
 	height: 150px;
+}
+
+.navbar .nav-link:hover{
+	background-color: red;
+}
+.nav-link-active{
+	background-color: orange !important;
+
 }

@@ -15,7 +15,9 @@ include("list.php");
 						<div class="col-4">
 							<div class="card">
 								<div class="card-header">
-									<img class="card-img-top" src="image/s1.jpg" alt="Card image cap">
+									<div>
+										<img class="card-img-top" src="image/s1.jpg" alt="Card image cap">
+									</div>
 								</div>
 								<div class="card-body"> <h3>Fashionable Saree</h3>
 									<b><del>MRP:1000</del></b><br /> <b>Offer Price:200</b>
