@@ -7,6 +7,7 @@ $p = $_POST['password'];
 
 $p = sha1($p);
 
+
 $query = "SELECT * FROM user WHERE username='$u'";
 $result=mysqli_query($con, $query);
 if(mysqli_num_rows($result)==1)
