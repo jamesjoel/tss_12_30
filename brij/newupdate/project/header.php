@@ -2,6 +2,7 @@
 // print_r($_SERVER);
 $url=$_SERVER['REQUEST_URI'];
 
+
 ?>
 
 
@@ -27,7 +28,20 @@ $url=$_SERVER['REQUEST_URI'];
         </div>
       <div class="col-md-3 col-sm-5 col-5   offset-md-5 offset-sm-3 offset-3">
         <ul class="nav">
-          
+          <?php
+          if (isset($_SESSION['is_user_logged']))
+           {?>
+            <li class="nav-item">
+          <a class="nav-link text-light ml-2 navbar_link mt-2 <?php if(strstr($url,'my_account.php')){ echo "navbar_link_active";} ?>" href="my_account.php">My account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light ml-2 navbar_link mt-2 <?php if(strstr($url,'logout.php')){ echo "navbar_link_active";} ?>" href="logout.php">logout</a>
+        </li>
+
+         <?php }
+         else
+         {?>
+                   
           <li class="nav-item">
               <a href="#" class="text-light mt-2  btn btn-success " data-toggle="modal" data-target="#myModal">
       Login <i class="fa fa-lock" aria-hidden="true"></i></a>
@@ -142,6 +156,13 @@ $url=$_SERVER['REQUEST_URI'];
   </div>
 </div>
             </li>
+
+         <?php } ?>
+
+
+
+
+
         </ul>
       </div>
       </div> 
