@@ -1,5 +1,5 @@
 <?php
-include("db.php");
+include("header.php");
 // print_r($_SESSION);
 if (! isset($_SESSION['is_user_logged']))
 {
@@ -7,7 +7,7 @@ if (! isset($_SESSION['is_user_logged']))
 	header("location:login.php");
 
 }
-include("header.php");
+
 
 ?>
 <div class="conatiner-fluid" style="min-height: 600px;">

@@ -1,5 +1,5 @@
 <?php
-include("db.php");
+ include("db.php");
 include("header.php");
 include("slider.php");
 $query_product = "SELECT * FROM product";

@@ -8,13 +8,13 @@ $a=$_POST['user_name'];
 
 
 $p = sha1($b);
+
  $query="SELECT * FROM tableuser WHERE full_name='$a'";
 
  $result=mysqli_query($con, $query);
 if(mysqli_num_rows($result)==1)
 {
 	 $data= mysqli_fetch_assoc($result);
-	 
     if ($data['password']==$p)
 	 {
 		$_SESSION['name']=$data['full_name'];

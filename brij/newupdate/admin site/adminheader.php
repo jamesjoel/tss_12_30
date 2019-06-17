@@ -21,7 +21,7 @@ $url=$_SERVER['REQUEST_URI'];
 	<div class="container-fluid">
 		<div class="row bg-success">
 			<div class="col-md-8 offset-md-1">
-				<h4 class="mt-2"><a class="text-light " href="#">Admin site</a>
+				<h4 class="mt-2"><a class="text-light " href="#">Admin penal</a>
 				</h4>
 			</div>
 			<h4><div class="col-md-4 "><span class="badge badge-primary mt-2">from $ 16.5/m</span></div></h4>
@@ -38,8 +38,11 @@ $url=$_SERVER['REQUEST_URI'];
     <div class="collapse navbar-collapse justify-content-center " id="idtarget"  >
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a href="index.php" class="nav-link text-light navbar_link mr-4 nav_link_admin" >Home </a>
+          <a href="index.php" class="nav-link text-light navbar_link mr-4 nav_link_admin" >Home</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link text-light navbar_link mr-4 nav_link_admin" href='login.php' data-toggle="modal" data-target="#myModal">login</a>
+         </li>
         <li class="nav-item">
           <a class="nav-link text-light navbar_link mr-4 nav_link_admin" href="#" data-toggle="modal" data-target="#myModal">about</a>
          </li>
@@ -59,13 +62,13 @@ $url=$_SERVER['REQUEST_URI'];
 			<a class="nav-link nav_link_admin  <?php if(strstr($url,'add_product.php')) { echo "nav_link_admin_active";} ?>" href="add_product.php">Add Product</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link nav_link_admin <?php if(strstr($url,'view_product.php')) { echo "nav_link_admin_active";} ?>" href="#">View Product</a>
+			<a class="nav-link nav_link_admin <?php if(strstr($url,'view_product.php')) { echo "nav_link_admin_active";} ?>" href="admin_view_product.php">View Product</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link nav_link_admin" href="#">Add Category</a>
+			<a class="nav-link nav_link_admin  <?php if(strstr($url,'add_category.php')) { echo "nav_link_admin_active";} ?>" href="add_category.php">Add Category</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link nav_link_admin" href="#">View Category</a>
+			<a class="nav-link nav_link_admin <?php if(strstr($url,'view_category.php')) {echo "nav_link_admin_active";}?>" href="view_category.php">View Category</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link nav_link_admin" href="#">View User</a>

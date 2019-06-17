@@ -5,10 +5,10 @@ $con = mysqli_connect("localhost", "root", "password", "user");
 // mysqli_connect("hostname", "username", "password", "dbname")
 
 $a = $_POST['product_name'];
-$b = $_POST['product_Category'];
+$b = $_POST['product_category'];
 $c = $_POST['product_price'];
-$d = $_POST['product_discount'];
-$e = $_POST['product_Details'];
+$d = $_POST['discount'];
+$e = $_POST['details'];
 
 
 
@@ -17,5 +17,5 @@ $e = $_POST['product_Details'];
 // die;
 
 mysqli_query($con, $query);
-header("location:index.php");
+header("location:admin_index.php");
 ?>
