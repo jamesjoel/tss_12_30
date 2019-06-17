@@ -1,5 +1,9 @@
 <?php
 include("header.php");
+$con = mysqli_connect("localhost", "root", "password", "user");
+
+$query_product="SELECT * FROM table_product";
+$result_product=mysqli_query($con,$query_product);
 
 ?>
 	<div id="div1" class="jumbotron bg-success ">
@@ -57,36 +61,7 @@ include("header.php");
 	</div>
 	<br/><br/><br/><br/><br/>
 	<div style="clear: both;"></div><br/>
-	<div class="container-fluid ">
-		 <?php
-		include("menuvar-top.php");
-		?>
-		<!-- "this page is menuvar-top" -->
-			<div class="col-sm-6 col-6 col-md-3  ">
-				<div class="card" id="card1">
-				    <div class="card-header"><h3><span class="badge badge-success">Add Product</span></h3></div>
-				    <div class="card-body " style="height: 220px; background-image: url(image/classu1.jpg); background-size: 100% 220px;">
-				    </div>
-				    <div class="card-footer"><p><b> style Mobile Cover</b> RS.<del> 180</del> Jush&#8377;149</p></div>
-				</div>
-			</div>
-		    <div class="col-sm-6 col-6 col-md-3 ">
-				<div class="card">
-				    <div class="card-header"><h3><span class="badge badge-success">Add Product</span></h3></div>
-				    <div class="card-body" style="height: 220px; background-image: url(image/classu2.jpg); background-size: 100% 220px;">
-				    </div>
-				    <div class="card-footer"><p><b> style Mobile Cover</b> RS.<del> 180</del> Jush&#8377;149</p></div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-6 col-md-3 ">
-				<div class="card">
-				    <div class="card-header"><h3><span class="badge badge-success">Add Product</span></h3></div>
-				    <div class="card-body" style="height: 220px; background-image: url(image/classu3.jpg); background-size: 100% 220px;">
-				    </div>
-				    <div class="card-footer"><p><b> style Mobile Cover</b> RS.<del> 180</del> Jush&#8377;149</p></div>
-				</div>
-		</div>
-	    </div>
+	
 	</div><br/>
 		<div class="container-fluid ">
 			 <?php
@@ -94,29 +69,29 @@ include("header.php");
 		?>
 			 <!-- "this is my menuvar_bottom" -->
 		
-			<div class="col-sm-6 col-6 col-md-3 ">
-				<div class="card">
+			
+				<?php 
+				while($my_data=mysqli_fetch_assoc($result_product))
+				{  
+					$r=$my_data['product_price'];
+					$d=$my_data['discount'];
+					$d=$r*$d/100;
+					$p=$r-$d;
+					?>
+					<div class="col-sm-6 col-6 col-md-3 ">
+					<div class="card">
 				    <div class="card-header"><h3><span class="badge badge-success">Add Product</span></h3></div>
 				    <div class="card-body" style="height: 220px; background-image: url(image/classu4.jpg); background-size: 100% 220px;">
 				    </div>
-				    <div class="card-footer"><p><b> style Mobile Cover</b> RS.<del> 180</del> Jush&#8377;149</p></div>
+				    <div class="card-footer"><center><p><b> <?php echo $my_data['product_name']; ?><br/></b></center>RS.<del><?php echo $r; ?></del> Jush&#8377;<?php echo $p; ?></p></div>
 				</div>
 			</div>
+				<?php }
+				?>
+				
+
 		    <div class="col-sm-6 col-6 col-md-3 ">
-				<div class="card">
-				    <div class="card-header"><h3><span class="badge badge-success">Add Product</span></h3></div>
-				    <div class="card-body" style="height: 220px; background-image: url(image/classu5.jpg); background-size: 100% 220px;">
-				    </div>
-				    <div class="card-footer"><p><b> style Mobile Cover</b> RS.<del> 180</del> Jush&#8377;149</p></div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-6 col-md-3 ">
-				<div class="card">
-				    <div class="card-header"><h3><span class="badge badge-success">Add Product</span></h3></div>
-				    <div class="card-body" style="height: 220px; background-image: url(image/classu6.jpg); background-size: 100% 220px;">
-				    </div>
-				    <div class="card-footer"><p><b> style Mobile Cover</b> RS.<del> 180</del> Jush&#8377;149</p></div>
-				</div>
+				
 			</div>
 	    </div>
 	</div><br/>
