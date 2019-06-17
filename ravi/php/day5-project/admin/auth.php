@@ -3,14 +3,14 @@ include("../db.php");
 $u = $_POST['username'];
 $p = $_POST['password'];
 
-// $p = sha1($p);
+// $p = ($p);
 
-$query = "SELECT * FROM admin WHERE username='$u'";
+echo $query = "SELECT * FROM admin WHERE username='$u'";
 $result=mysqli_query($con, $query);
+	// print_r($result);die;
 if(mysqli_num_rows($result)==1)
 {
 	$data = mysqli_fetch_assoc($result);
-	// print_r($data);
 	if($data['password']==$p)
 	{
 		$_SESSION['id']=$data['id'];
