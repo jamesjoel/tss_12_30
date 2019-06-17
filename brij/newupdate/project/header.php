@@ -1,7 +1,7 @@
 <?php
 // print_r($_SERVER);
 $url=$_SERVER['REQUEST_URI'];
-
+session_start();
 
 ?>
 
@@ -180,7 +180,14 @@ $url=$_SERVER['REQUEST_URI'];
         <li class="nav-item">
           <a href="index.php" class="nav-link text-light navbar_link mr-2 <?php if(strstr($url,'index.php') ) {echo "navbar_link_active";} ?>">Home</a>
         </li>
-        <li class="nav-item">
+        <?php
+        if (isset($_SESSION['is_user_logged'])) 
+        {?>
+           
+       <?php }
+       else{?>
+
+<li class="nav-item">
           <a href="login.php" class="nav-link text-light navbar_link mr-2 <?php if(strstr($url,'login.php') ) {echo "navbar_link_active";} ?>">login</a>
         </li>
   <!--       <li class="nav-item">
@@ -297,6 +304,11 @@ $url=$_SERVER['REQUEST_URI'];
        <li class="nav-item">
           <a class="nav-link text-light ml-2 navbar_link <?php if(strstr($url,'signup.php')){ echo "navbar_link_active";} ?>" href="signup.php">Sign Up</a>
         </li>
+
+
+      <?php }
+        ?>
+        
 
 
         <li class="nav-item">
