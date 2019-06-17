@@ -1,6 +1,6 @@
 <?php
 include("admin_db.php");
-if(! isset($_SESSION['is_admin_logged_in']))
+if(! isset($_SESSION['is_user_logged']))
 {
 	header("location:admin_login.php");
 }

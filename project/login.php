@@ -2,6 +2,7 @@
 include("db.php");
 include("header.php");
 include("slider.php");
+session_start();
 ?>
 
 <div class="conatiner-fluid">

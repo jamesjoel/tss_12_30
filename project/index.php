@@ -52,7 +52,7 @@ $result_product = mysqli_query($con, $query_product);
 							<div class="view-box">
 							Quick View
 							</div>
-						  	<img class="card-img-top" src="image/1.jpg" alt="Card image" />
+						  	<img class="card-img-top" src="admin/product_image/<?php echo $data_product['product_image']; ?>" alt="Card image" />
 							  <div class="card-body">
 							    <h4 class="card-title"><?php echo $data_product['product_name'] ?></h4>
 							    <p class="card-text"><del>(<?php echo $data_product['product_price'] ?>)</del> <?php echo $discount_price; ?></p>
