@@ -5,6 +5,7 @@ include("slider.php");
 $query_product = "SELECT * FROM product";
 $result_product = mysqli_query($con, $query_product);
 
+
 // print_r(mysqli_fetch_assoc($result));
 ?>
 
@@ -39,6 +40,7 @@ $result_product = mysqli_query($con, $query_product);
 					<?php
 					while($data_product=mysqli_fetch_assoc($result_product))
 					{ 
+	
 						$p = $data_product['product_price'];
 						$d = $data_product['discount'];
 						$x = $p*$d/100;
