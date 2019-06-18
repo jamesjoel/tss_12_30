@@ -14,18 +14,18 @@
 </head>
 <body>
 	<nav class="navbar navbar-light navbar-expand-sm bg-warning">
-		<a href="#" class="navbar-brand">ADMIN</a>
+		<a href="index.php" class="navbar-brand">ADMIN</a>
 		<button class="navbar-toggler" data-target="#menu" data-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
 		<div class="collapse navbar-collapse justify-content-end" id="menu">
 			<ul class="navbar-nav">
-			<li class="nav-item "><a class="nav-link" href="#">Daskboard</a>	</li>
+			<li class="nav-item "><a class="nav-link" href="dashboard.php">Daskboard</a>	</li>
 			<li class="nav-item "><a class="nav-link" href="add_product.php">Add Product</a>	</li>
-			<li class="nav-item "><a class="nav-link" href="#">View Product</a>	</li>
+			<li class="nav-item "><a class="nav-link" href="view_product.php">View Product</a>	</li>
 			<li class="nav-item "><a class="nav-link" href="#">Add Catagory</a>	</li>
-			<li class="nav-item "><a class="nav-link" href="#">View Catagory</a>	</li>
+			<li class="nav-item "><a class="nav-link" href="view_catagory.php">View Catagory</a>	</li>
 			<li class="nav-item "><a class="nav-link" href="#">Views Users</a>	</li>
 			<li class="nav-item "><a class="nav-link" href="#">Setting</a>	</li>
-			<li class="nav-item "><a class="nav-link" href="#">Logout</a>	</li>
+			<li class="nav-item "><a class="nav-link" href="logout.php">Logout</a>	</li>
 			
 			
 			</ul>
