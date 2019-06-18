@@ -39,7 +39,7 @@ include("slider.php");
 						</div>
 				</div>
 			</form>
-		</div><!--  List catagary end -->
+		</div><!--  form catagary end -->
 	</div>
 </div><!-- container close -->
 <?php
