@@ -1,0 +1,47 @@
+.jumbotron_bg{
+height:16rem;
+background-image: url(../image/1.jpg);
+background-size: 100% 100%;
+}
+.jumbotron_bg:hover{
+	background-image: url(../image/4.jpg);
+background-size: 100% 100%;
+transition-timing-function: ease-in;
+transition:4s;
+}
+.jumbotron_cover{
+	background:rgba(108, 117, 125, 0.54);
+	height: 100%;
+	color: white;
+
+}
+.box {
+	display: none;
+	background-color: red;
+	width:450px;
+	margin: 3.5rem 17.625rem;
+	
+}
+/*.box:hover{
+	transition-timing-function: ease-in;
+	transition:4s;
+}*/
+.jumbotron_cover:hover .box{
+	display: block;
+color: white;
+transition-timing-function: ease-in;
+transition:4s;
+}
+/*jumbotron end*/
+/*list section*/
+.card .card-header img{
+	height: 150px;
+}
+
+.navbar .nav-link:hover{
+	background-color: red;
+}
+.nav-link-active{
+	background-color: orange !important;
+
+}
