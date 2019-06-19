@@ -1,13 +1,11 @@
 <?php
-include('../dbconnection.php');
-if(! isset($_SESSION['is_user_logged_in']))
+include("../db.php");
+if(! isset($_SESSION['is_admin_logged_in']))
 {
-	header("location:index.php");
+	header("location:../index.php");
 }
-include("header.php");
+include("admin_header.php");
 $query = "SELECT * FROM product";
-print_r($query);
-die();
 $result = mysqli_query($con, $query);
 ?>
 
@@ -32,10 +30,10 @@ $result = mysqli_query($con, $query);
 					{ ?>
 						<tr>
 							<td><?php echo $data['id'];?></td>
-							<td><?php echo $data['p_name'];?></td>
-							<td><?php echo $data['price'];?></td>
-							<td><?php echo $data['p_cata'];?></td>
-							<td><img src="product_image/<?php echo $data['p_image']; ?>" height="100" width="100"/></td>
+							<td><?php echo $data['product_name'];?></td>
+							<td><?php echo $data['product_price'];?></td>
+							<td><?php echo $data['product_category'];?></td>
+							<td><img src="product_image/<?php echo $data['product_image']; ?>" height="100" width="100"/></td>
 							<td><a href="#" class="btn btn-info btn-sm">View</a></td>
 							<td><a href="#" class="btn btn-warning btn-sm">Edit</a></td>
 							<td><a href="#" class="btn btn-danger btn-sm">Delete</a></td>

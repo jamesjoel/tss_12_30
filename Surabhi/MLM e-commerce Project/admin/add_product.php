@@ -1,11 +1,20 @@
 <?php 
+include('../dbconnection.php');
+if(! isset($_SESSION['is_user_logged_in']))
+{
+	header("location:index.php");
+}
+$query_cat="SELECT * FROM catagory";
+$result_cat=mysqli_query($con, $query_cat);
+
 include('header.php');
+
 ?>
 
 <div class="container-fluid mt-3">
 	<div class="row">
 		<div class="col-md-6 offset-3">
-			<form action="add_product_save.php" method="post">
+			<form action="add_product_save.php" method="post" enctype="enctype="multipart/form-data">
 
 				<div class="card">
 					<div class="card-header">
@@ -16,15 +25,31 @@ include('header.php');
 							<label for="product" class="col-md-3 col-form-label">Product Name</label>
 							<input type="text" id="product" name="product" placeholder="Enter Product Name" class="col-md-9 form-control">
 						</div>
+						<div class="form-group row">
+							<p class="text-danger">
+						<?php
+						if(isset($_SESSION['msg']))
+						{
+							echo $_SESSION['msg'];
+							unset($_SESSION['msg']);
+						}
+
+						?>
+					</p>
+							<label for="image" class="col-md-3 col-form-label">Product image</label>
+							<input type="file" id="image" name="image" class="col-md-9 form-control">
+						</div>
 
 						<div class="form-group row">
 							<label for="productCatagary" class="col-md-3 col-form-label">Catagry</label>
 							<select name="catagry" id="productCatagary" class="col-md-9 form-control" >
-								<option>Electronic </option>
-								<option>Mobile </option>
-								<option>Men Accessories </option>
-								<option>Women Accessories </option>
-								<option>Kids Accessories </option>
+							<?php
+						while($data=mysqli_fetch_assoc($result_cat))
+						{ ?>
+							<option value="<?php echo $data['id']; ?>"><?php echo $data['category_name']; ?></option>
+						<?php
+						}
+						?>
 								
 							</select>
 						</div>
