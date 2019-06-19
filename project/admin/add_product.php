@@ -46,7 +46,7 @@ $result = mysqli_query($con, $query);
 						<?php
 						while($data=mysqli_fetch_assoc($result))
 						{ ?>
-							<option><?php echo $data['category_name']; ?></option>
+							<option value="<?php echo $data['id']; ?>"><?php echo $data['category_name']; ?></option>
 						<?php
 						}
 						?>
