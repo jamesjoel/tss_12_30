@@ -6,6 +6,8 @@ if(! isset($_SESSION['is_user_logged_in']))
 }
 include("header.php");
 $query = "SELECT * FROM product";
+print_r($query);
+die();
 $result = mysqli_query($con, $query);
 ?>
 
@@ -20,7 +22,7 @@ $result = mysqli_query($con, $query);
 						<th>Product Name</th>
 						<th>Product Price</th>
 						<th>Product Category</th>
-					<!-- 	<th>Product Image</th> -->
+						<th>Product Image</th>
 						<td>View</td>
 						<td>Edit</td>
 						<td>Delete</td>
@@ -33,7 +35,7 @@ $result = mysqli_query($con, $query);
 							<td><?php echo $data['p_name'];?></td>
 							<td><?php echo $data['price'];?></td>
 							<td><?php echo $data['p_cata'];?></td>
-							<!-- <td><img src="product_image/<?php /*echo $data['product_image'];*/ ?>" height="100" width="100"/></td> -->
+							<td><img src="product_image/<?php echo $data['p_image']; ?>" height="100" width="100"/></td>
 							<td><a href="#" class="btn btn-info btn-sm">View</a></td>
 							<td><a href="#" class="btn btn-warning btn-sm">Edit</a></td>
 							<td><a href="#" class="btn btn-danger btn-sm">Delete</a></td>
