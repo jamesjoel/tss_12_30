@@ -3,9 +3,9 @@ include("../db.php");
 $u = $_POST['username'];
 $p = $_POST['password'];
 
-$p = sha1($p);
+//$p = sha1($p);
 
-$query = "SELECT * FROM admin WHERE username='$u'";
+$query = "SELECT * FROM admin_table WHERE user_name='$u'";
 
 $result=mysqli_query($con, $query);
 if(mysqli_num_rows($result)==1)
