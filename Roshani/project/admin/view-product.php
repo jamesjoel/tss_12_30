@@ -18,6 +18,7 @@ $result = mysqli_query($conn , $query);
 					<td>Product Neme</td>
 					<td>Product category</td>
 					<td>Product Price</td>
+					<td>product image</td>
 					<td>View</td>
 					<td>Edit</td>
 					<td>Delet</td>
@@ -32,6 +33,7 @@ $result = mysqli_query($conn , $query);
 						<td><?php echo $data['product_name']?></td>
 						<td><?php echo $data['product_category']?></td>
 						<td><?php echo $data['price']?></td>
+						<td><img src="photos/<?php echo $data['p_image']; ?>" height="100" width="100"/></td>
 						<td><a href="#" class="btn btn-danger btn-sm">Veiw</a></td>
 						<td><a href="#"class="btn btn-success btn-sm">Edit</a></td>
 						<td><a href="#"class="btn btn-warning btn-sm">Delet</a></td>

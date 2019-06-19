@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect("localhost", "admin", "admin", "tss_12_30");
+$con = mysqli_connect("localhost", "root", "", "roshani");
 
 $query = "SELECT * FROM resume";
 $result = mysqli_query($con, $query);
@@ -19,12 +19,12 @@ $result = mysqli_query($con, $query);
 	</tr>
 	<?php
 
-	while($data=mysqli_fetch_assoc($result))
+	while ($data = mysqli_fetch_assoc($result))
 	{ ?>
 		<tr>
 			<td><?php echo $data['id']; ?></td>
 			<td><?php echo $data['file_name']; ?></td>
-			<td><a download href="resume/<?php echo $data['file_name']; ?>">Download</a></td>
+			<td> <a download href="resume/<?php echo $data['file_name']; ?>">Download</a></td>
 		</tr>
 	<?php 
 	}
