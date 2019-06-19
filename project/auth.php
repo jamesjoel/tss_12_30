@@ -4,7 +4,7 @@ include("db.php");
 $u = $_POST['username'];
 $p = $_POST['password'];
 
-$p = sha1($p);
+ $p = sha1($p);
 
 
 $query = "SELECT * FROM user WHERE username='$u'";

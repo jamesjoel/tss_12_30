@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>class design</title>
+
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styleclass.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+</head>
+<body>
+	<div class="container-fluid">
+	   	<div class="row bg-dark">
+	   		<div class="col-md-4 col-sm-4 col-lg-4 col-4 ">
+	   			<img src="today1.jpg">
+	   		</div>
+			<div class="col-md-3 col-sm-5 col-5   offset-md-5 offset-sm-3 offset-3">
+				<ul class="nav">
+			 		<li class="nav-item">
+			  			<a  class="nav-link btn btn-success mt-2" href="#">login</a>
+			  		</li>&nbsp;&nbsp;
+			 		<li class="nav-item">
+			  			<a  class="nav-link btn btn-success mt-2" href="#">sing up</a>
+			  		</li>
+				</ul>
+			</div>
+	  	</div> 
+	</div>
+	<nav class="navbar  navbar-expand-sm bg-primary navbar-dark sticky-top justify-content-center">
+		<a class="navbar-brand" href="#">
+			<img src="h10.jpg" style="width: 80px;">
+		</a>
+	
+	<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#idtarget">
+			<span class="navbar-toggle-icon"><i class="fa fa-bars" aria-hidden="true"></i> The Best product </span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-center " id="idtarget"  >
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link text-light ml-4" href="#">login & Sing UP</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-light ml-4" href="#">abut</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link text-light ml-4 dropdown-toggle " href="#" data-toggle="dropdown" >more</a>
+					<div class="dropdown-menu">
+						<a href="#" class="dropdown-item">information</a>
+						<a href="#" class="dropdown-item">location</a>
+						<a href="#" class="dropdown-item">marketing</a>
+						<a href="#" class="dropdown-item">products</a>
+					</div>
+ 				</li>
+			</ul>
+		</div>
+			<a href="#" class="text-light" data-toggle="modal" data-target="	#myModal"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+ 			My Cart (0)</a>
+
+
+</nav>
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+		<div class="modal-header">     
+			<h2>Header</h2>
+		</div>
+		<div class="modal-body">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-danger" data-dismiss="modal">Close</button>
+		</div>
+      
+    </div>
+  </div>
+</div>
+	<div class="jumbotron bg-success" style=" min-height: 250px; height:auto; background-image: url(s21.jpg); background-size:100% 250px; ">
+		<h1 class="text-light">The Stepping stone</h1>
+		<p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore<br/> et dolore magna aliqua.  Ut enim ad Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed....
+		</p>
+	</div>
+	<div style="clear: both;"></div><br/>
+	<div class="container-fluid ">
+		<div class="row">
+			<div class="col-sm-6 col-md-2 col-4">
+				<div class="Card ">
+					<div class="header"><h5>New Arrival</h2></div>
+					<div class="body"><h5> &nbsp; &nbsp;My Choice</h5>
+						<h5><a href="#">flipcat product</a></h5>
+						<h5><a href="#">oxl product</a></h5>
+						<h5><a href="#">radmi product</a></h5>
+						<h5><a href="#">apple product</a></h5>
+					</div>
+					<div class="footer">
+						<h5> &nbsp; &nbsp;your choice</h5>
+						<div>
+							<h5><a href="#">marriage product</a></h5>
+							<h5><a href="#">party product</a></h5>
+							<h5><a href="#">birthay product</a></h5>
+							<h5><a href="#">children product</a></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-4 col-md-2 offset-md-1">
+				<div class="card" id="card1">
+				    <div class="card-header"><h5><span class="badge badge-success">Add Product</span></h5></div>
+				    <div class="card-body " style="height: 220px; background-image: url(classu1.jpg); background-size: 100% 220px;">
+				    </div>
+				    <div class="card-footer"><p><b> style Mobile Cover</b> RS.<del> 180</del> Jush&#8377;149</p></div>
+				</div>
+			</div>
+		    <div class="col-sm-6 col-6 col-md-2 offset-md-1">
+				<div class="card">
+				    <div class="card-header"><h5><span class="badge badge-success">Add Product</span></h5></div>
+				    <div class="card-body" style="height: 220px; background-image: url(classu2.jpg); background-size: 100% 220px;">
+				    </div>
+				    <div class="card-footer"><p><b> style Mobile Cover</b> RS.<del> 180</del> Jush&#8377;149</p></div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-6 col-md-2 offset-md-1">
+				<div class="card">
+				    <div class="card-header"><h5><span class="badge badge-success">Add Product</span></h5></div>
+				    <div class="card-body" style="height: 220px; background-image: url(classu3.jpg); background-size: 100% 220px;">
+				    </div>
+				    <div class="card-footer"><p><b> style Mobile Cover</b> RS.<del> 180</del> Jush&#8377;149</p></div>
+				</div>
+			</div>
+	    </div>
+	</div><br/>
+		<div class="container-fluid ">
+		<div class="row">
+			<div class="col-sm-6 col-md-2 col-6">
+				<div class="Card ">
+					<div class="header"><h5>New Arrival</h2></div>
+					<div class="body"><h5> &nbsp; &nbsp;My Choice</h4>
+						<h5><a href="#">flipcat product</a></h5>
+						<h5><a href="#">oxl product</a></h5>
+						<h5><a href="#">radmi product</a></h5>
+						<h5><a href="#">apple product</a></h5>
+					</div>
+					<div class="footer">
+						<h5> &nbsp; &nbsp;your choice</h5>
+						<div>
+							<h5><a href="#">marriage product</a></h5>
+							<h5><a href="#">party product</a></h5>
+							<h5><a href="#">birthay product</a></h5>
+							<h5><a href="#">children product</a></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-6 col-md-2 offset-md-1">
+				<div class="card">
+				    <div class="card-header"><h5><span class="badge badge-success">Add Product</span></h5></div>
+				    <div class="card-body" style="height: 220px; background-image: url(classu4.jpg); background-size: 100% 220px;">
+				    </div>
+				    <div class="card-footer"><p><b> style Mobile Cover</b> RS.<del> 180</del> Jush&#8377;149</p></div>
+				</div>
+			</div>
+		    <div class="col-sm-6 col-6 col-md-2 offset-md-1">
+				<div class="card">
+				    <div class="card-header"><h5><span class="badge badge-success">Add Product</span></h5></div>
+				    <div class="card-body" style="height: 220px; background-image: url(classu5.jpg); background-size: 100% 220px;">
+				    </div>
+				    <div class="card-footer"><p><b> style Mobile Cover</b> RS.<del> 180</del> Jush&#8377;149</p></div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-6 col-md-2 offset-md-1">
+				<div class="card">
+				    <div class="card-header"><h5><span class="badge badge-success">Add Product</span></h5></div>
+				    <div class="card-body" style="height: 220px; background-image: url(classu6.jpg); background-size: 100% 220px;">
+				    </div>
+				    <div class="card-footer"><p><b> style Mobile Cover</b> RS.<del> 180</del> Jush&#8377;149</p></div>
+				</div>
+			</div>
+	    </div>
+	</div><br/>
+	
+	</div><br/>
+	<div style="clear: both;"></div>
+	<div class="container-fluid">
+		<div  class="row" style="height: 100px;">
+			<div class="col-md-4 col-sm-6 col-6 offset-md-5 offset-sm-4 offset-4"><h1>Latest Items</h1></div>
+		</div>
+		<div  class="row" style="height:400px;">
+			<div id="div-item1" class="col-md-2 col-sm-3 col-4 clearfix  offset-md-1  ">
+			</div>
+				<div id="div-item2" class="col-md-2 col-sm-3 col-4 offset-md-2 " >
+			</div>
+				<div id="div-item3" class="col-md-2 col-sm-3 col-4 offset-md-2 ">
+			</div>
+		</div>
+
+	</div><br/><br/>
+	<div style="clear: both;"></div>
+	<div class="container-fluid">
+		<div class="row" style="height: 250px">
+			<div class="col-md-8 col-sm-8 col-8 bg-dark" style="background-image: url(new8.jpg); background-size: 100% 100%"></div>
+			<div class="col-md-3 col-sm-4 col-4 bg-success offset-md-1 " style="background-image: url(classdemo1.jpg); background-size: 100% 100%"></div>
+		</div>
+
+	</div>  
+	<div style="clear: both;"></div>
+	<br/><br/>
+	<div class="container">
+		<div class="row ">
+		<div  class="col-md-6 offset-md-3 col-sm-12 col-12  ">	<h3>The International Product Of Bombay</h3></div>
+		</div>
+	</div>
+	<div class="container bg-success" style="height: 420px;">
+		<div class="row"style="height: 420px; background-image: url(21.jpg); background-size:100% 100%">>
+		</div>
+		
+		
+	</div><br/>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 offset-md-1" style="text-align:justify;">Photoshop is a popular web design tool. With it, you can create web design mock-ups that can later on be converted to a tutorials features top-notch techniques on how tofunctional HTML/CSS template.<br/><br/>
+
+This collection of tutorials features top-notch techniques on how to create web design layouts using Photoshop.tutorials features top-notch techniques on how to
+Photoshop is a popular web design tool. With it, you can create web design mock-ups that can later on be converted to a tutorials features top-notch techniques on how tofunctional HTML/CSS template.<br/><br/>
+
+This collection of tutorials features top-notch techniques on how to create web design layouts using Photoshop.tutorials features top-notch techniques on how to
+			</div>
+		</div>
+	</div><br/><br/>
+	<div class="container-fluid">
+		<div class="row badge-dark" style="height: 65px;">
+			<div class="col-md-4 offset-md-8 mt-2 col-sm-4 col-3 offset-sm-4 offset-4  ">
+				<button class="btn btn-success btn-lg">Create Account</button>
+			</div>
+		</div>
+		<div class="row bg-dark" style="height: 250px;">
+			<div class="col-md-7 bg-dark">
+				<div class="row text-light">
+					<div class="col-md-2 offset-md-1 ">
+						<h4>About</h4>
+						<a href="#" class="text-light" style="font-size: 15px;" >Contact Us</a>
+						<a href="#" class="text-light" style="font-size: 15px;" >About Us</a>
+						<a href="#" class="text-light" style="font-size: 15px;" >Flikart Stories</a>
+						<a href="#" class="text-light"  style="font-size: 15px;">press</a>
+						<a href="#" class="text-light"  style="font-size: 15px;">more</a>
+						<a href="#" class="text-light" style="font-size: 15px;">Shipping</a>
+						<a href="#" class="text-light" style="font-size: 15px;">About</a>						
+					</div>
+					<div class="col-md-2 offset-md-1">
+						<h4>Help</h4>
+						<a href="#" class="text-light" style="font-size: 15px;">Payment</a>
+						<a href="#" class="text-light" style="font-size: 15px;">Shipping</a>
+						<a href="#" class="text-light" style="font-size: 15px;">About</a>
+						<a href="#" class="text-light" style="font-size: 15px;">FAQ</a>
+						<a href="#" class="text-light" style="font-size: 15px;">return</a>
+						<a href="#" class="text-light" style="font-size: 15px;">shops</a>
+						<a href="#" class="text-light" style="font-size: 15px;">About</a>
+						<a href="#" class="text-light" style="font-size: 15px;">FAQ</a>
+						<a href="#" class="text-light" style="font-size: 15px;">return</a>
+						<a href="#" class="text-light" style="font-size: 15px;">shops</a>
+					</div>
+ 						<div class="col-md-2 offset-md-1">
+						<h4>Policy</h4>
+						<a href="#" class="text-light" style="font-size: 15px;">Payment</a> 
+						<a href="#" class="text-light" style="font-size: 15px;">Shipping</a>
+						<a href="#" class="text-light" style="font-size: 15px;">About</a>
+						<a href="#" class="text-light" style="font-size: 15px;">FAQ</a>  
+						<a href="#" class="text-light" style="font-size: 15px;">return</a>
+						<a href="#" class="text-light" style="font-size: 15px;">shops</a>
+						<a href="#" class="text-light" style="font-size: 15px;">About</a>
+						<a href="#" class="text-light" style="font-size: 15px;">FAQ</a>
+						<a href="#" class="text-light" style="font-size: 15px;">return</a>
+						<a href="#" class="text-light" style="font-size: 15px;">shops</a>
+					</div>
+						<div class="col-md-2 offset-md-1">
+						<h4>Social</h4>
+						<a href="#" class="text-light" style="font-size: 15px;">Contact Us</a>
+						<a href="#" class="text-light" style="font-size: 15px;" >About Us</a>
+						<a href="#" class="text-light" style="font-size: 15px;">Flikart Stories</a>
+						<a href="#" class="text-light" style="font-size: 15px;">press</a>
+						<a href="#" class="text-light" style="font-size: 15px;">more</a>
+						<a href="#" class="text-light" style="font-size: 15px;">Shipping</a>
+						<a href="#" class="text-light" style="font-size: 15px;">About</a>
+						
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="row">
+					<div class="col-md-6">
+				<form>
+					<div class="form-group">
+						<label for="form-group" class="text-light">First Name</label>
+						<input  class="form-control" type="text" name="" placeholder="First Name">
+					</div>
+					
+					<div class="form-group">
+						<label for="form-group" class="text-light">Email</label>
+						<input class="form-control" type="text" name="" placeholder="Last Name">
+					</div>
+				</form>
+				<br/>
+				 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-success">Login</button>
+			        </div>
+			        <div class="col-md-6">
+			        	<form >
+			        	<div class="form-group">
+						<label for="form-group" class="text-light">Last Name</label>
+						<input class="form-control" type="text" name="" placeholder="Last Name">
+					    </div>
+					<div class="form-group">
+						<label for="form-group" class="text-light">Passward</label>
+						<input class="form-control" type="text" name="" placeholder="Last Name">
+					</div>
+			    </form>
+			    <br/>
+			   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-success">Sing Up</button>
+			        </div>
+		        </div>
+			</div>
+		</div>	
+	</div>
+
+</body>
+</html>

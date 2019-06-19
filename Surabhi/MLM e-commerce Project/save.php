@@ -11,7 +11,9 @@ $d = $_POST['add'];
 $e = $_POST['gender'];
 $f = $_POST['contact'];
 $g = $_POST['city'];
-$query="INSERT INTO user(first_name, user_name, password,address,gender,contact,city)value('$a','$b','$c','$d','$e','$f','$g')";
-mysqli_query($con, $query);
+$query="INSERT INTO user(name, username, password,address,gender,contact,city)value('$a','$b','$c','$d','$e','$f','$g')";
+/*print_r($query);
+*/mysqli_query($con, $query);
+
 header("location:index.php");
 ?>
