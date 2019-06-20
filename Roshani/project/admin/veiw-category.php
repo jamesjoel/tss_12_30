@@ -30,7 +30,7 @@ $result = mysqli_query($conn , $query);
 					<tr>
 					<td><?php echo $n;?></td>
 					<td><?php echo $data['category_name'];?></td>
-					<td><a href="#"class="btn btn-danger btn-sm">Edit</a></td>
+					<td><a href="edit_cate.php?"class="btn btn-danger btn-sm">Edit</a></td>
 					<td>
 						<a href="cat_delete.php?cid=<?php echo $data['id'];?>"class=" btn btn-warning btn-sm">Delete</a>
 					</td>
