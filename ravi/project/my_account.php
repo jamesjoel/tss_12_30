@@ -8,7 +8,7 @@ if(! isset($_SESSION['is_user_logged_in']))
 include("header.php");
 include("slider.php");
 ?>
-<div class="conatiner-fluid" style="min-height: 600px;">
+<div class="container-fluid" style="min-height: 600px;">
 	<div class="container">
 		<div class="row">
 			<?php include("left-menu.php"); ?>

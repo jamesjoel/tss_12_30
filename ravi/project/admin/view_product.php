@@ -36,8 +36,8 @@ $result = mysqli_query($con, $query);
 							<td><?php echo $data['category_name'];?></td>
 							<td><img src="product_image/<?php echo $data['product_image']; ?>" height="100" width="100"/></td>
 							<td><a href="full_view.php?pid=<?php echo $data['pid'];  ?>" class="btn btn-info btn-sm">View</a></td>
-							<td><a href="#" class="btn btn-warning btn-sm">Edit</a></td>
-							<td><a href="#" class="btn btn-danger btn-sm">Delete</a></td>
+							<td><a href="edit_product.php?id=<?php echo $data['pid']; ?>" class="btn btn-warning btn-sm">Edit</a></td>
+							<td><a href="delete_pro.php?pid=<?php echo $data['id']; ?>" class="btn btn-danger btn-sm">Delete</a></td>
 						</tr>
 					<?php 
 					$n++;
