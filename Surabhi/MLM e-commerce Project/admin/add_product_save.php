@@ -7,8 +7,6 @@ $size = $_FILES['image']['size'];
 
 $arr = explode(".",$name);
 $ext = end($arr);
-/*print_r($ext);*/
- 
 if($ext == "jpg" || $ext == "jpeg" || $ext == "png" || $ext == "gif")
 { 
 	if($size <= (1024*1024))
@@ -16,19 +14,16 @@ if($ext == "jpg" || $ext == "jpeg" || $ext == "png" || $ext == "gif")
 
 		$new_name = time().rand(100000, 1000000).".".$ext;
 
-		move_uploaded_file($tmp_name, "image1/".$new_name);
+		move_uploaded_file($tmp_name, "image/".$new_name);
 
 		extract($_POST);
-	
-	$query="INSERT INTO
-product(p_name, p_cata, p_image, price, descount, detail)
-value('$product','$catagry','$new_name','$price','$discount','$detail')";
-print_r($ext);
-print_r($query); 
+			
+		$query="INSERT INTO product(p_name, p_cata, p_image, price, descount, detail) value('$product','$catagry','$new_name','$price','$discount','$detail')";
 
-mysqli_query($con, $query);
+		mysqli_query($con, $query);
+		echo "submitted";
 
-header("location:view_product.php"); 
+		header("location:view_product.php"); 
 
 	}
 	else
