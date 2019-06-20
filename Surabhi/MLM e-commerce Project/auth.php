@@ -12,7 +12,7 @@ echo $password."<br />";
 $p= sha1($password);
 
 echo $p."<br />";
-$query = "SELECT * FROM tableuser WHERE full_name='$username'";
+$query = "SELECT * FROM user WHERE username='$username'";
  echo "<br />".$query;
 
 $result=mysqli_query($con, $query);
@@ -24,26 +24,28 @@ if(mysqli_num_rows($result)==1)
 		echo "<br />";
 		print_r($data['password']);
 		echo "<br />". $p;
-		/*die();*/
+
 	if($data['password']==$p)
 			{
-			$_SESSION['name']=$data['full_name'];
+			$_SESSION['name']=$data['name'];
 			$_SESSION['id']=$data['id'];
 			$_SESSION['is_user_logged_in']=true;
 			echo "yes";
-			/*header("location:index.php");*/
+			header("location:myaccount.php");
 			}
 
 else
 	{
 		$_SESSION['msg']= "This Password is Incorrect !";
+		echo "password X";
 		/*header("location:login.php");*/
 	}
 }
 else
 {
 	$_SESSION['msg']= "This Username And Password is Incorrect !";
-	header("location:login.php");
+	echo "all wrong";
+	/*header("location:login.php");*/
 }
 
 

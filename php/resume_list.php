@@ -1,6 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 $con = mysqli_connect("localhost", "root", "", "roshani");
+=======
+$con = mysqli_connect("localhost", "root", "password", "user");
+>>>>>>> 8fb89a2d5f9adf14efb62e234f04247a58cf6226
 
 $query = "SELECT * FROM resume";
 $result = mysqli_query($con, $query);

@@ -3,7 +3,7 @@
   include("dbcon.php");
    include ('header.php');
    include ('slider.php');
-   $product_query = "SELECT * FROM save_product";
+   $product_query = "SELECT *,save_product.id AS pid FROM save_product INNER JOIN category_nameid ON save_product.product_category= category_nameid.id";
    $pro_result = mysqli_query($conn, $product_query);
    ?>
 
@@ -24,7 +24,7 @@
 					<div class="card mb-2" style="min-height: 400px">
     						<img class="card-img-top" src="admin/photos/<?php echo $data_product['p_image']?>"style="width:100%;">
     						<div class="card-body ">
-     							<div class="card-title"><h3><?php echo $data_product['product_name'] ?></h3></div> 
+     							<div class="card-title"><h3><?php echo $data_product['product_name'] ?></h3><p><?php echo $data_product['category_name']?></p></div> 
      							 <del>(<?php echo $data_product['price'] ?><i class="fa fa-inr" aria-hidden="true"></i>)</del>
      							 <p><i class="fa fa-inr" aria-hidden="true"></i><?php echo $discount_price; ?></p>
 
