@@ -26,14 +26,27 @@ $result = mysqli_query($con, $query);
 					</tr>
 					<?php
 					while($data = mysqli_fetch_assoc($result))
-					{ ?>
+					{ 
+
+						if($data['status']==1)
+						{
+							$btn = "<a href='change_status.php?uid=".$data['id']."&status=".$data['status']."' class='btn btn-warning btn-sm'>Disable</a>";
+						}
+						else
+						{
+							$btn = "<a href='change_status.php?uid=".$data['id']."&status=".$data['status']."' class='btn btn-success btn-sm'>Enable</a>";
+
+						}
+
+
+						?>
 						<tr>
 							<td><?php echo $data['id'];?></td>
 							<td><?php echo $data['full_name'];?></td>
 							<td><?php echo $data['username'];?></td>
 							<td><?php echo $data['contact'];?></td>
 							<td><a href="#" class="btn btn-info btn-sm">View</a></td>
-							<td><a href="#" class="btn btn-warning btn-sm">Status</a></td>
+							<td><?php echo $btn; ?></td>
 							<td><a href="#" class="btn btn-danger btn-sm">Delete</a></td>
 						</tr>
 					<?php 
