@@ -8,7 +8,7 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.bundel.js"></script>
 </head>
-<body class="bg-danger">
+<body class="bg-info">
 <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
 		<a href="#" class="navbar-brand">The Admin</a>
 		<button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
@@ -51,5 +51,3 @@
 			
 	</nav>
 
-</body>
-</html>

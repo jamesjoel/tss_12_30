@@ -4,17 +4,16 @@ if(! isset($_SESSION['is_user_logged_in']))
 {
 	header("location:index.php");
 }
+include('header.php');
 $query_cat="SELECT * FROM catagory";
 $result_cat=mysqli_query($con, $query_cat);
-
-include('header.php');
 
 ?>
 
 <div class="container-fluid mt-3">
 	<div class="row">
 		<div class="col-md-6 offset-3">
-			<form action="add_product_save.php" method="post" enctype="enctype="multipart/form-data">
+			<form action="add_product_save.php" method="post" enctype="multipart/form-data">
 
 				<div class="card">
 					<div class="card-header">

@@ -24,19 +24,25 @@ $result = mysqli_query($conn , $query);
 				</tr>
 				
 					<?php
+					$n=1;
 					while ($data = mysqli_fetch_assoc($result))
 					 {
 						?>
 					<tr>
-						<td><?php echo $data['id']?></td>
+						<td><?php echo $n ;?></td>
 						<td><?php echo $data['full_name']?></td>
 						<td><?php echo $data['username']?></td>
 						<td><?php echo $data['contact']?></td>
-						<td><a href="#" class="btn btn-danger btn-sm">Veiw</a></td>
+						<td>
+							<a href="user_detail.php?uid=<?php echo $data['id']?>" class="btn btn-danger btn-sm">Veiw</a>
+						</td>
 						<td><a href="#"class="btn btn-success btn-sm">Status</a></td>
-						<td><a href="#"class="btn btn-warning btn-sm">Delet</a></td>
+						<td>
+							<a href="user_del.php?uid=<?php echo $data ['id'];?>"class="btn btn-warning btn-sm">Delete</a>
+						</td>
 					</tr>
 						<?php
+						$n++;
 					}
 					?>
 				
