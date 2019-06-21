@@ -46,7 +46,7 @@ $result = mysqli_query($conn , $query);
 							<a href="full_detail.php?pid=<?php echo $data['pid']; ?>" class="btn btn-danger btn-sm">Veiw</a>
 						</td>
 						<td>
-							<a href="#"class="btn btn-success btn-sm">Edit</a>
+							<a href="edit-product.php?id=<?php echo $data['pid']?>"class="btn btn-success btn-sm">Edit</a>
 						</td>
 
 						<td>

@@ -52,7 +52,7 @@ $data = mysqli_fetch_assoc($result);
 				<th>City</th>
 				<td><?php echo $_SESSION['city'];?></td>
 			</tr>
-			<tr><td><a href="#" class="btn btn-danger">Update Profile</a></td></tr>
+			<tr><td><a href="edit_profile.php?id=<?php echo $data['id'];?>" class="btn btn-danger">Update Profile</a></td></tr>
 			
 		</table>
 				
