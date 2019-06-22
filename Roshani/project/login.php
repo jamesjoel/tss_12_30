@@ -1,6 +1,7 @@
  
 	<?php
-	$conn = mysqli_connect("localhost", "root", "", "roshani");
+// $conn = mysqli_connect("localhost", "root", "", "roshani");
+include("dbcon.php");
    include ('header.php');
    include ('slider.php');
    ?>
