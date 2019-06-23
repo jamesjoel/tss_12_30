@@ -1,5 +1,6 @@
 <?php
- include("db.php");
+
+include("db.php");
 include("header.php");
 include("slider.php");
 $query_product = "SELECT * FROM product";
@@ -54,11 +55,11 @@ $result_product = mysqli_query($con, $query_product);
 							<div class="view-box">
 							Quick View
 							</div>
-						  	<img class="card-img-top" src="admin/product_image/<?php echo $data_product['product_image']; ?>" alt="Card image" />
+						  	<img height="250" class="card-img-top" src="admin/product_image/<?php echo $data_product['product_image']; ?>" alt="Card image" />
 							  <div class="card-body">
 							    <h4 class="card-title"><?php echo $data_product['product_name'] ?></h4>
 							    <p class="card-text"><del>(<?php echo $data_product['product_price'] ?>)</del> <?php echo $discount_price; ?></p>
-							    <a href="#" class="btn btn-outline-dark text-center d-block">Add to Cart</a>
+							    <a href="add_to_cart.php?pid=<?php echo $data_product['alias_id']; ?>" class="btn btn-outline-dark text-center d-block">Add to Cart</a>
 							  </div>
 						</div>
 					</div>
