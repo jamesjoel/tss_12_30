@@ -21,8 +21,11 @@ if($ext == "jpg" || $ext == "jpeg" || $ext == "png" || $ext == "gif")
 		move_uploaded_file($tmp_name, "product_image/".$new_name);
 
 		extract($_POST);
+		$alias_id = sha1(time());
 
-		mysqli_query($con, "INSERT INTO product (product_name, product_price, product_category, detail, discount, product_image) VALUES ('$product_name', '$product_price', '$product_category', '$detail', '$discount', '$new_name')");
+
+
+		mysqli_query($con, "INSERT INTO product (product_name, product_price, product_category, detail, discount, product_image, alias_id) VALUES ('$product_name', '$product_price', '$product_category', '$detail', '$discount', '$new_name', '$alias_id')");
 		header("location:view_product.php");
 
 	}

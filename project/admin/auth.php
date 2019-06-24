@@ -5,14 +5,14 @@ $p = $_POST['password'];
 
 //$p = sha1($p);
 
-$query = "SELECT * FROM admin_table WHERE user_name='$u'";
+$query = "SELECT * FROM admin WHERE username='$u'";
 
 $result=mysqli_query($con, $query);
 if(mysqli_num_rows($result)==1)
 {
 	$data = mysqli_fetch_assoc($result);
 	
-	if($data['password']==$p)
+	if($data['password']==sha1($p))
 	{
 		$_SESSION['id']=$data['id'];
 		$_SESSION['is_admin_logged_in']=true;

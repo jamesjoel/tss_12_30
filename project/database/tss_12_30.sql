@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 19, 2019 at 02:06 PM
+-- Generation Time: Jun 22, 2019 at 02:11 PM
 -- Server version: 5.7.26-0ubuntu0.18.04.1
 -- PHP Version: 7.2.19-0ubuntu0.18.04.1
 
@@ -57,7 +57,8 @@ CREATE TABLE `category` (
 INSERT INTO `category` (`id`, `category_name`) VALUES
 (3, 'Fashion Mens'),
 (4, 'Fashion Womens'),
-(5, 'Electronics');
+(5, 'Electronics And Appliance'),
+(6, 'Home Appliance');
 
 -- --------------------------------------------------------
 
@@ -72,16 +73,19 @@ CREATE TABLE `product` (
   `product_category` varchar(100) NOT NULL,
   `discount` int(11) NOT NULL,
   `detail` text NOT NULL,
-  `product_image` varchar(255) NOT NULL
+  `product_image` varchar(255) NOT NULL,
+  `alias_id` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`id`, `product_name`, `product_price`, `product_category`, `discount`, `detail`, `product_image`) VALUES
-(1, 'Saree', '2500.00', '4', 10, 'sdfg sdfgsdfg', '1560929993836812.jpg'),
-(2, 'Fridge', '24500.00', '5', 10, 'sdfg sdfg sdfgf', '1560932978900403.jpeg');
+INSERT INTO `product` (`id`, `product_name`, `product_price`, `product_category`, `discount`, `detail`, `product_image`, `alias_id`) VALUES
+(1, 'Sony', '25000.00', '5', 10, 'sdfg sdfsdfg', '1561191366483142.jpeg', '5a48ed6e682d2398454b38b16a0fca2f92991aa2'),
+(2, 'New Sofa', '35000.00', '6', 10, 'sdfg sdsdghdf', '1561191400945595.jpeg', '546efc890957a4b0487ab17e43d1ddeef06cb77c'),
+(3, 'Shirt', '2500.00', '3', 10, 'sdg asrgsdfg', '1561191412204434.jpg', 'b6df22344b9379693db9d0dccb51e548ab7196d3'),
+(4, 'Saree', '2500.00', '4', 10, 'sfg sdfg sdgsdfg', '1561192427879313.jpg', 'c946852795a6d45d3bd6f2339c9790716759662a');
 
 -- --------------------------------------------------------
 
@@ -116,17 +120,18 @@ CREATE TABLE `user` (
   `address` text NOT NULL,
   `gender` varchar(10) NOT NULL,
   `city` varchar(100) NOT NULL,
-  `contact` varchar(100) NOT NULL
+  `contact` varchar(100) NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `full_name`, `username`, `password`, `address`, `gender`, `city`, `contact`) VALUES
-(1, 'Rohit', 'rohit@gmail.com', '17ba0791499db908433b80f37c5fbc89b870084b', 'sg sdfgsdfg', 'male', 'Pune', '124578'),
-(2, 'Jaya', 'jaya@gmail.com', '17ba0791499db908433b80f37c5fbc89b870084b', 'test', 'female', 'Pune', '124578'),
-(3, 'Gaurav', 'gaurav@gmail.com', '17ba0791499db908433b80f37c5fbc89b870084b', 'g sdfgsdfg', 'male', 'Mumbai', '124578');
+INSERT INTO `user` (`id`, `full_name`, `username`, `password`, `address`, `gender`, `city`, `contact`, `status`) VALUES
+(1, 'Rohit', 'rohit@gmail.com', '17ba0791499db908433b80f37c5fbc89b870084b', 'sg sdfgsdfg', 'male', 'Pune', '124578', 1),
+(2, 'Jaya', 'jaya@gmail.com', '17ba0791499db908433b80f37c5fbc89b870084b', 'test', 'female', 'Pune', '124578', 1),
+(3, 'Gaurav', 'gaurav@gmail.com', '17ba0791499db908433b80f37c5fbc89b870084b', 'g sdfgsdfg', 'male', 'Mumbai', '124578', 0);
 
 --
 -- Indexes for dumped tables
@@ -180,7 +185,7 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `resume`
 --

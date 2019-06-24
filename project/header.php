@@ -1,5 +1,21 @@
 <?php
+<<<<<<< HEAD
  // print_r($_SERVER);
+=======
+if(isset($_COOKIE['cart']))
+{
+	$cart = $_COOKIE['cart'];
+	$cart_arr = explode("#", $cart);
+	$total_item = count($cart_arr);
+	
+
+}
+else
+{
+	$total_item = 0;
+}
+// print_r($_SERVER);
+>>>>>>> bd30f47d482612839379d284f8b522ed593d2089
 $url = $_SERVER['REQUEST_URI'];
 ?>
 <!DOCTYPE html>
@@ -81,6 +97,11 @@ $url = $_SERVER['REQUEST_URI'];
 			</li>
 			<li class="nav-item">
 				<a href="help.php" class="nav-link <?php if(strstr($url, "help.php")){ echo "nav-link-active"; } ?>">Help</a>
+			</li>
+		</ul>
+		<ul class="navbar navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="my_cart.php">My Cart (<?php echo $total_item; ?>)</a>
 			</li>
 		</ul>
 	</div>
