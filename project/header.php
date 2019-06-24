@@ -1,7 +1,7 @@
 <?php
-<<<<<<< HEAD
+
  // print_r($_SERVER);
-=======
+
 if(isset($_COOKIE['cart']))
 {
 	$cart = $_COOKIE['cart'];
@@ -15,7 +15,7 @@ else
 	$total_item = 0;
 }
 // print_r($_SERVER);
->>>>>>> bd30f47d482612839379d284f8b522ed593d2089
+
 $url = $_SERVER['REQUEST_URI'];
 ?>
 <!DOCTYPE html>

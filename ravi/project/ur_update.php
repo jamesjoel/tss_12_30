@@ -10,7 +10,7 @@ $a = $_POST['full_name'];
 
 $query = "UPDATE user SET full_name='$a'  WHERE id = $id";
 mysqli_query($con, $query);
-header("location:users.php");
+header("location:my_account.php");
 
 
 

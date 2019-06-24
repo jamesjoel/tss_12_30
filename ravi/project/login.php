@@ -2,6 +2,7 @@
 include("db.php");
 include("header.php");
 include("slider.php");
+
 ?>
 
 <div class="conatiner-fluid">
@@ -51,7 +52,7 @@ include("slider.php");
 								</div>
 							</div>
 							<div class="card-footer">
-								<input type="submit" value="Login" class="btn btn-primary">
+							<a href="my_account.php?id=<?php echo $data['id'];  ?>"><input type="submit" value="Login" class="btn btn-primary"><a>
 						<p class="text-danger text-center">
 							<?php
 							if(isset($_SESSION['msg']))

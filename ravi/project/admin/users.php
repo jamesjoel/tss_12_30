@@ -2,7 +2,7 @@
 include("../db.php");
 if(! isset($_SESSION['is_admin_logged_in']))
 {
-	header("location:../index.php");
+	header("location:index.php");
 }
 include("admin_header.php");
 $query = "SELECT * FROM user";
@@ -26,15 +26,27 @@ $result = mysqli_query($con, $query);
 					</tr>
 					<?php
 					while($data = mysqli_fetch_assoc($result))
-					{ ?>
+					{ 
+
+						if($data['status']==1)
+						{
+							$btn = "<a href='change_status.php?uid=".$data['id']."&status=".$data['status']."' class='btn btn-warning btn-sm'>Disable</a>";
+						}
+						else
+						{
+							$btn = "<a href='change_status.php?uid=".$data['id']."&status=".$data['status']."' class='btn btn-success btn-sm'>Enable</a>";
+
+						}
+
+
+						?>
 						<tr>
 							<td><?php echo $data['id'];?></td>
 							<td><?php echo $data['full_name'];?></td>
 							<td><?php echo $data['username'];?></td>
 							<td><?php echo $data['contact'];?></td>
 							<td><a href="user_detail.php?id=<?php echo $data['id'];  ?>" class="btn btn-info btn-sm">View</a></td>
-							<td><a href="edit_user.php?id=<?php echo $data['id'];  ?>" class="btn btn-info btn-sm">Edit</a></td>
-							<td><a href="#" class="btn btn-warning btn-sm">Status</a></td>
+							<td><?php echo $btn; ?></td>
 							<td><a href="delete_user.php?uid=<?php echo $data['id']; ?>" class="btn btn-danger btn-sm">Delete</a></td>
 						</tr>
 					<?php 
