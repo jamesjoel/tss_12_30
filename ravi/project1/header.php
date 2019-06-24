@@ -1,5 +1,5 @@
 <?php
-// print_r($_SERVER);
+  // print_r($_SERVER);
 $url = $_SERVER['REQUEST_URI'];
 
 ?>
@@ -14,6 +14,16 @@ $url = $_SERVER['REQUEST_URI'];
 	
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+	
+	<style type="text/css">
+		.navbar .nav-link:hover{
+	background-color: #000;
+}
+.nav-link-active{
+	background-color: #000 !important;
+
+}
+	</style>
 </head>
 <body>
 	<div class="conatiner-fluid header-bg">
@@ -75,13 +85,13 @@ $url = $_SERVER['REQUEST_URI'];
 				<a href="index.php" class="nav-link <?php if(strstr($url, "index.php")){ echo "nav-link-active"; } ?>">Home</a>
 			</li>
 			<li class="nav-item">
-				<a href="about.php" class="nav-link <?php if(strstr($url, "about.php")){ echo "nav-link-active"; } ?>">About</a>
+				<a href="about.php" class="nav-link <?php  if(strstr($url, "about.php")){ echo "nav-link-active"; } ?>">About</a>
 			</li>
 			<li class="nav-item">
 				<a href="contact.php" class="nav-link <?php if(strstr($url, "contact.php")){ echo "nav-link-active"; } ?>">Contact</a>
 			</li>
 			<li class="nav-item">
-				<a href="help.php" class="nav-link <?php if(strstr($url, "help.php")){ echo "nav-link-active"; } ?>">Help</a>
+				<a href="#" class="nav-link <?php if(strstr($url, "#")){ echo "nav-link-active"; } ?>">Help</a>
 			</li>
 		</ul>
 	</div>

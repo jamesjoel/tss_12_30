@@ -33,6 +33,7 @@ $result = mysqli_query($con, $query);
 							<td><?php echo $data['username'];?></td>
 							<td><?php echo $data['contact'];?></td>
 							<td><a href="user_detail.php?id=<?php echo $data['id'];  ?>" class="btn btn-info btn-sm">View</a></td>
+							<td><a href="edit_user.php?id=<?php echo $data['id'];  ?>" class="btn btn-info btn-sm">Edit</a></td>
 							<td><a href="#" class="btn btn-warning btn-sm">Status</a></td>
 							<td><a href="delete_user.php?uid=<?php echo $data['id']; ?>" class="btn btn-danger btn-sm">Delete</a></td>
 						</tr>

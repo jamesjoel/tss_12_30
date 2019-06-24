@@ -5,9 +5,9 @@ $p = $_POST['password'];
 
 // $p = ($p);
 
-echo $query = "SELECT * FROM admin WHERE username='$u'";
+echo $query = "SELECT * FROM admin_table WHERE username='$u'";
 $result=mysqli_query($con, $query);
-	// print_r($result);die;
+	// print_r($result);
 if(mysqli_num_rows($result)==1)
 {
 	$data = mysqli_fetch_assoc($result);
