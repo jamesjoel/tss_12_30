@@ -3,12 +3,14 @@ include('dbcon.php');
    include ('header.php');
    include ('slider.php');
    $a = $_SESSION['id'];
-//    print_r($_SESSION);
-// die();
+   print_r($_SESSION);
 
-$query = "SELECT * FROM user WHERE id='".$a."'";
+
+$query = "SELECT * FROM user WHERE id='$a'";
 $result = mysqli_query($conn, $query);
 $data2 = mysqli_fetch_assoc($result);
+	print_r($data2);
+	// die;
    ?>
 <div class="container-fluid bg-info">
 	<div class="row">
@@ -29,11 +31,12 @@ $data2 = mysqli_fetch_assoc($result);
 								
 								<div class="form-group">
 									<label>Address</label>
-									<textarea name="add" class="form-control"><?php echo $_SESSION['address'];?></textarea>
+								<textarea name="add" class="form-control"><?php echo $data2['address'];?></textarea>
 								</div>
 								<div class="form-group">
 									<label>Gender</label>
-									<Br />
+									<br/>
+					
 									Male <input type="radio" value="male" name="gender">
 									Female <input type="radio" value="female" name="gender">
 								</div>
@@ -50,9 +53,9 @@ $data2 = mysqli_fetch_assoc($result);
 								</div>
 								<div class="form-group">
 									<label>Contact</label>
-									<input type="text" name="contact" class="form-control"value="<?php echo $_SESSION['contact'];?>">
+									<input type="text" name="contact" class="form-control" value="<?php echo $data2['contact'];?>">
 								</div>
-								<input type="hidden" name="id" value="<?php echo $_SESSION['id'];?>"class="form-control">
+								<input type="hidden" name="id" value="<?php echo $data2['id'];?>"class="form-control">
 								<div class="form-group">
 									<input type="checkbox" name="agree">
 									I Agree
