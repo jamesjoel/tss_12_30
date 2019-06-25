@@ -12,7 +12,7 @@ if(mysqli_num_rows($result)==1)
 {
 	$data = mysqli_fetch_assoc($result);
 	
-	if($data['password']==sha1($p))
+	if($data['password']==($p))
 	{
 		$_SESSION['id']=$data['id'];
 		$_SESSION['is_admin_logged_in']=true;

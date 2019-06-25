@@ -6,9 +6,10 @@ if(! isset($_SESSION['is_admin_logged_in']))
 }
 include("admin_header.php");
 $a = $_GET['id'];
- $query = "SELECT * FROM user WHERE id='$a'";
+$query = "SELECT * FROM user WHERE id=$a";
 $result = mysqli_query($con, $query);
 $data = mysqli_fetch_assoc($result);
+
 ?>
 
 
@@ -28,16 +29,16 @@ $data = mysqli_fetch_assoc($result);
 				<td><?php echo $data['password'];?></td>
 			</tr>
 			<tr>
-				<th>Address</th>
-				<td><?php echo $data['address'];?></td>
-			</tr>
-			<tr>
-				<th>Gender</th>
+				<th>gender</th>
 				<td><?php echo $data['gender'];?></td>
 			</tr>
 			<tr>
-				<th>City</th>
+				<th>city</th>
 				<td><?php echo $data['city'];?></td>
+			</tr>
+			<tr>
+				<th>Address</th>
+				<td><?php echo $data['address'];?></td>
 			</tr>
 			<tr>
 				<th>Contact</th>
