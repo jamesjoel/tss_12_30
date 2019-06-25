@@ -3,9 +3,6 @@
 include("db.php");
 include("header.php");
 include("slider.php");
-$query_product = "SELECT * FROM product";
-$result_product = mysqli_query($con, $query_product);
-
 
 // print_r(mysqli_fetch_assoc($result));
 ?>
@@ -40,6 +37,9 @@ $result_product = mysqli_query($con, $query_product);
 				<h3>Item In Your Cart</h3>
 				<a href="clear_cart.php">Clear Cart</a>
 				<?php
+				if(isset($_COOKIE['cart']))
+				{
+
 				$cart = $_COOKIE['cart'];
 				$cart_arr = explode("#", $cart);
 				foreach($cart_arr as $x)
@@ -48,11 +48,17 @@ $result_product = mysqli_query($con, $query_product);
 					$data_cart = mysqli_fetch_assoc($result_cart);
 					?>
 					<div class="card mb-4">
+						<a href="clear_item.php?id=<?php echo $x; ?>" class="close justify-content-end">x</a>
 						<div class="card-body"><?php echo $data_cart['product_name']; ?></div>
 						<div class="card-footer"><?php echo $data_cart['product_price']; ?></div>
 					</div>
 
 				<?php
+				}
+				}
+				else
+				{
+					echo "<h2>No Item in Your Cart</h2>";
 				}
 				?>
 			</div>
