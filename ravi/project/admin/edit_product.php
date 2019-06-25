@@ -96,6 +96,7 @@ $data_pro = mysqli_fetch_assoc($result_pro);
 			</div>
 
 			<input type="hidden" name="id" value="<?php echo $data_pro['id'] ?>" />
+			<input type="hidden" name="oldname" value="<?php echo $data_pro['product_image'] ?>" />
 		</div>
 		</form>
 		</div>

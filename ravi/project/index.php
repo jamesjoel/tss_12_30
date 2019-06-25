@@ -1,13 +1,38 @@
 <?php
+
 include("db.php");
 include("header.php");
 include("slider.php");
+if(isset($_GET['q']))
+{
 
-$query_product = "SELECT * FROM product";
+	$query_product = "SELECT * FROM product WHERE product_name LIKE '%".$_GET['q']."%'";
+	
+}
+elseif(isset($_GET['category']))
+{
+	$x = $_GET['category'];
+	$query_product = "SELECT * FROM product WHERE product_category = $x";
+	
+}
+else
+{
+	$query_product = "SELECT * FROM product";
+	
+}
+
+
+
+
 $result_product = mysqli_query($con, $query_product);
+
+
+
+
 
 // print_r(mysqli_fetch_assoc($result));
 ?>
+
 
 <div class="conatiner-fluid">
 	<div class="container">

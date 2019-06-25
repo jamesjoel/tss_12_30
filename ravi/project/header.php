@@ -19,10 +19,10 @@ $url = $_SERVER['REQUEST_URI'];
 	<div class="conatiner-fluid header-bg">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-12 col-sm-12">
+				<div class="col-md-4 col-12 col-sm-12">
 					<p class="text-light pt-2">Indore Best Shopping Site...</p>
 				</div>
-				<div class="col-md-6 col-12 col-sm-12">
+				<div class="col-md-8 col-12 col-sm-12">
 					<ul class="nav justify-content-end">
 						<?php
 						if(isset($_SESSION['is_user_logged_in']))
@@ -30,6 +30,9 @@ $url = $_SERVER['REQUEST_URI'];
 
 							<li class="nav-item">
 								<a href="my_account.php" class="nav-link text-light">My Account <i class="fa fa-lock"></i></a>
+							</li>
+							<li class="nav-item">
+								<a href="my_profile.php" class="nav-link text-light">My Profile </a>
 							</li>
 							<li class="nav-item">
 								<a href="logout.php" class="nav-link text-light">Logout <i class="fa fa-user"></i></a>
@@ -85,4 +88,10 @@ $url = $_SERVER['REQUEST_URI'];
 			</li>
 		</ul>
 	</div>
+	<form class="form-inline" action="index.php" method="get">
+	<div class="form-group">
+		<input type="text" placeholder="Keyword" class="form-control" name="q">
+		<input type="submit" value="Search" class="btn btn-dark">
+	</div>
+	</form>
 </nav>

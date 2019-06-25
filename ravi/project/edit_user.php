@@ -21,12 +21,13 @@ $data1 = mysqli_fetch_assoc($result1);
 		<div class="row">
 			<div class="col-md-6 offset-md-3">
 		<h2>Update profile</h2>
-		<form action="" method="post">
+		
 			
 		<div class="card">
 			<div class="card-header">
 				<h3>User Detail</h3>
 			</div>
+			<form action="update_user.php" method="post">
 			<div class="card-body">
 				<div class="form-group">
 					<label>user name</label>
@@ -34,46 +35,41 @@ $data1 = mysqli_fetch_assoc($result1);
 				</div>
 				<div class="form-group">
 									<label>Username</label>
-									<input type="text" name="username"  class="form-control"value="<?php echo $data1['full_name']; ?>">
+									<input type="text" disabled="disabled"name="username"  class="form-control"value="<?php echo $data1['username']; ?>">
 								</div>
-								<div class="form-group">
-									<label>Password</label>
-									<input type="password" name="pass" class="form-control">
-								</div>
-								<div class="form-group">
-									<label>Re-Password</label>
-									<input type="password" name="re_pass" class="form-control">
-								</div>
+								
+								
 								<div class="form-group">
 									<label>Address</label>
-									<textarea name="add" class="form-control"></textarea>
+									<textarea name="add" class="form-control"><?php echo $data1['address']; ?></textarea>
 								</div>
 								<div class="form-group">
 									<label>Gender</label>
 									<Br />
-									Male <input type="radio" value="male" name="gender">
-									Female <input type="radio" value="female" name="gender">
+									Male <input <?php if($data1['gender']=='male'){ echo "checked='checked'"; } ?> type="radio" name="gender" value="male" />
+							Female <input <?php if($data1['gender']=='female'){ echo "checked='checked'"; } ?> type="radio" name="gender" value="female" />
 								</div>
 								<div class="form-group">
 									<label>City</label>
 									<select class="form-control" name="city">
 										<option>Select</option>
-										<option>Indore</option>
-										<option>Mumbai</option>
-										<option>Pune</option>
-										<option>Bhopal</option>
-										<option>Delhi</option>
+										<option <?php if($data1['city']=='Indore'){ echo "selected='selected'"; } ?>>Indore</option>
+										<option <?php if($data1['city']=='Mumbai'){ echo "selected='selected'"; } ?>>Mumbai</option>
+										<option <?php if($data1['city']=='Pune'){ echo "selected='selected'"; } ?>>Pune</option>
+										<option <?php if($data1['city']=='Delhi'){ echo "selected='selected'"; } ?>>Delhi</option>
+									
 									</select>
 								</div>
 								<div class="form-group">
 									<label>Contact</label>
-									<input type="text" name="contact" class="form-control">
+									<input type="text" name="contact" class="form-control"value="<?php echo $data1['contact']; ?>">
 								</div>
 
 			</div>
 			<div class="card-footer">
 				<input type="submit" value="Update" class="btn btn-primary">
 			</div>
+			</form>
 		</div>
 		</form>
 		</div>

@@ -8,7 +8,7 @@ $result = mysqli_query($con, "SELECT * FROM category");
 					{ ?>
 
 				  <li class="list-group-item d-flex justify-content-between align-items-center">
-				    <?php echo $data['category_name']; ?>
+				    <a href="index.php?category=<?php echo $data['id']; ?>"><?php echo $data['category_name']; ?></a>
 				    <span class="badge badge-dark badge-pill">0</span>
 				  </li>
 					<?php
