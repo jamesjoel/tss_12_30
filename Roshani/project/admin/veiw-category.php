@@ -34,7 +34,7 @@ $result = mysqli_query($conn , $query);
 						<a href="edit_cate.php?id=<?php echo $data['id']?>"class="btn btn-danger btn-sm">Edit</a>
 					</td>
 					<td>
-						<a href="cat_delete.php?cid=<?php echo $data['id'];?>"class=" btn btn-warning btn-sm">Delete</a>
+						<a href="cat_delete.php?cid=<?php echo $data['alias_id'];?>"class=" btn btn-warning btn-sm">Delete</a>
 					</td>
 				</tr>
 			<?php

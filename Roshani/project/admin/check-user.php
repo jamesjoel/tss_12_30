@@ -19,14 +19,21 @@ $result = mysqli_query($conn , $query);
 					<td>User Name</td>
 					<td> contact</td>
 					<td>View</td>
+					<td>Delete</td>
 					<td>Status</td>
-					<td>Delet</td>
 				</tr>
 				
 					<?php
 					$n=1;
 					while ($data = mysqli_fetch_assoc($result))
 					 {
+					 	if($data['status']==1)
+					 	{
+					 		$btn = "<a href='change_status.php?uid=".$data['id']."&status=".$data['status']."' class='btn btn-info btn-sm'>Disable</a>";
+					 	}
+					 else{
+					 	$btn = "<a href='change_status.php?uid=".$data['id']."&status=".$data['status']."' class='btn btn-success btn-sm'>Enable</a>";
+					 }
 						?>
 					<tr>
 						<td><?php echo $n ;?></td>
@@ -36,10 +43,11 @@ $result = mysqli_query($conn , $query);
 						<td>
 							<a href="user_detail.php?uid=<?php echo $data['id']?>" class="btn btn-danger btn-sm">Veiw</a>
 						</td>
-						<td><a href="#"class="btn btn-success btn-sm">Status</a></td>
+						
 						<td>
 							<a href="user_del.php?uid=<?php echo $data ['id'];?>"class="btn btn-warning btn-sm">Delete</a>
 						</td>
+						<td><?php echo $btn; ?></td>
 					</tr>
 						<?php
 						$n++;

@@ -1,4 +1,20 @@
+<?php
+if(isset($_COOKIE['cart']))
+{
+	$cart = $_COOKIE['cart'];
+	$cart_arr = explode("#", $cart);
+	$total_item = count($cart_arr);
+	
 
+}
+else
+{
+	$total_item = 0;
+}
+// print_r($_SERVER);
+$url = $_SERVER['REQUEST_URI']
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -88,7 +104,7 @@
 		</ul>
 		<ul class="navbar-nav navbar-right">
 			<li class="nav-item">
-				<a href="#"class="nav-link"><i class="fa fa-shopping-cart" aria-hidden="true"></i> My-Cart<span class="badge badge-danger">(0)</span></a>
+				<a href="my_cart.php"class="nav-link"><i class="fa fa-shopping-cart" aria-hidden="true"></i> My-Cart<span class="badge badge-danger">(<?php echo $total_item;?>)</span></a>
 			</li>
 		</ul>
 		</div>

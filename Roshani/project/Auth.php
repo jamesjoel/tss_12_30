@@ -12,11 +12,23 @@ if(mysqli_num_rows($result)==1)
 {
 	$data = mysqli_fetch_assoc($result);
        if($data['password']==$p)
-	{
-		$_SESSION['name']= $data['full_name'];
+       {
+       	if ($data['status']==1) 
+       	{
+       	$_SESSION['name']= $data['full_name'];
 		$_SESSION['id']= $data['id'];
 		$_SESSION['is_user_logged_in']=true;
 		header("location:account.php");
+       	
+       	}
+       	else
+       	{
+       		$_SESSION['msg']= "You Are Disabled now pls contact to admin !";
+			header("location:login.php");
+
+       	}
+	
+		
 	}
 	else
 	{
@@ -24,7 +36,8 @@ if(mysqli_num_rows($result)==1)
 		header("location:login.php");
 	}
 }
-else{
+else
+{
 	
 	$_SESSION['msg'] = "This Username And Password is Incorrect !";
 	header("location:login.php");

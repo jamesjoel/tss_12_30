@@ -21,8 +21,9 @@ if ($ext =="jpg"||$ext =="jpeg"||$ext =="png"||$ext =="gif" )
 			$d = $_POST['discount'];
 			$e = $_POST['detail'];
 
-			$query  = " INSERT INTO save_product(product_name,product_category,price,discount,detail,p_image
-			) VALUES('$a','$b','$c','$d','$e','$new_name')";
+			$alias_id = sha1(time());
+
+			$query  = " INSERT INTO save_product(product_name,product_category,price,discount,detail,p_image,alias_id) VALUES('$a','$b','$c','$d','$e','$new_name','$alias_id')";
 			mysqli_query($conn , $query);
 			header("location:view-product.php");
 	}
