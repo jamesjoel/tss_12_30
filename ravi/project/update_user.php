@@ -8,6 +8,7 @@ $d = $_POST['add'];
 $e = $_POST['gender'];
 
 $id = $_SESSION['id'];
+$_SESSION['name']=$a;
 // print_r($_POST);die;
 
 $query = "UPDATE user SET full_name='$a', contact = '$b', city = '$c', address = '$d', gender = '$e' WHERE id = $id";

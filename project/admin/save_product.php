@@ -23,7 +23,7 @@ if($ext == "jpg" || $ext == "jpeg" || $ext == "png" || $ext == "gif")
 		extract($_POST);
 		$alias_id = sha1(time());
 
-
+ 
 
 		mysqli_query($con, "INSERT INTO product (product_name, product_price, product_category, detail, discount, product_image, alias_id) VALUES ('$product_name', '$product_price', '$product_category', '$detail', '$discount', '$new_name', '$alias_id')");
 		header("location:view_product.php");
