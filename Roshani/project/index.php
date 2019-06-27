@@ -4,7 +4,22 @@
    include ('header.php');
    include ('slider.php');
   $product_query = "SELECT *,save_product.id AS pid, save_product.alias_id as paid FROM save_product INNER JOIN category_nameid ON save_product.product_category= category_nameid.id";
-   $pro_result = mysqli_query($conn, $product_query);
+  
+   if (isset($_GET['q']))
+    {
+      $product_query = "SELECT * FROM save_product WHERE product_name LIKE '%".$_GET['q']."%'";
+
+   }
+   elseif(isset($_GET['category']))
+   {
+    $x = $_GET['category'];
+    $product_query = "SELECT * FROM save_product WHERE product_category = '$x'";
+
+   }
+   else{
+    $product_query = "SELECT * FROM save_product";
+   }
+    $pro_result = mysqli_query($conn, $product_query);
    ?>
 
 <div class="container-fluid bg-info">
