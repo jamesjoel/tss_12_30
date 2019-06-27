@@ -43,6 +43,9 @@ $url = $_SERVER['REQUEST_URI']
 								<a href="account.php" class="nav-link text-dark">My Account <i class="fa fa-lock"></i></a>
 							</li>
 							<li class="nav-item">
+								<a href="my_profile.php" class="nav-link text-dark">My Profile <i class="fa fa-user"></i></a>
+							</li>
+							<li class="nav-item">
 								<a href="logout.php" class="nav-link text-dark">Logout <i class="fa fa-user"></i></a>
 							</li>
 
@@ -108,4 +111,10 @@ $url = $_SERVER['REQUEST_URI']
 			</li>
 		</ul>
 		</div>
+		<form class="form-inline" action="index.php" method="get">
+	<div class="form-group">
+		<input type="text" placeholder="Keyword" class="form-control" name="q">
+		<input type="submit" value="Search" class="btn btn-dark">
+	</div>
+	</form>
 	</nav>
