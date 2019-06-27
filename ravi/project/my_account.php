@@ -20,7 +20,9 @@ $data1 = mysqli_fetch_assoc($result1);
 			<div class="col-md-9">
 				<h3>Welcome to our website : <?php echo $_SESSION['name']; ?></h3>
                <h2>User Details</h2>
-		<table class="table table-dark">
+               
+
+         <table class="table table-dark">
 			
 			<tr>
 				<th>Full Name</th>
@@ -46,14 +48,13 @@ $data1 = mysqli_fetch_assoc($result1);
 			<tr>
 				<th>Contact</th>
 				<td><?php echo $data1['contact'];?></td>
-			</tr>
+			</tr> 
 			<tr>
-				<td>
-				<input type="submit" value="Update" class="btn btn-primary">
-				</td>
+				<td><a href="edit_user.php?id=<?php echo $data1['id']; ?>" class="btn btn-warning btn-sm">Edit</a></td>
 			</tr>
+				                 
 			
-		</table>
+	</table>
 		
 
 			</div>
@@ -63,4 +64,6 @@ $data1 = mysqli_fetch_assoc($result1);
 <?php
 include("footer.php");
 ?>
+
+
 
