@@ -42,10 +42,11 @@ $result_cat=mysqli_query($con, $query_cat);
 						<div class="form-group row">
 							<label for="productCatagary" class="col-md-3 col-form-label">Catagry</label>
 							<select name="catagry" id="productCatagary" class="col-md-9 form-control" >
+								<option>Select Catagory</option>
 							<?php
 						while($data=mysqli_fetch_assoc($result_cat))
 						{ ?>
-							<option value="<?php echo $data['id']; ?>"><?php echo $data['category_name']; ?></option>
+							<option value="<?php echo $data['id']; ?>"><?php echo $data['catagory_name']; ?></option>
 						<?php
 						}
 						?>

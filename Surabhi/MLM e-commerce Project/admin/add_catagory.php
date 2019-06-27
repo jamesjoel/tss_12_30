@@ -20,7 +20,7 @@ include('header.php');
 			<div class="card-body">
 				<div class="form-group">
 					<label>Category Name</label>
-					<input type="text" name="category_name" class="form-control">
+					<input type="text" name="catagory_name" class="form-control">
 				</div>
 				
 
