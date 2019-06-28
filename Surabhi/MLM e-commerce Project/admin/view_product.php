@@ -5,8 +5,10 @@ if(! isset($_SESSION['is_user_logged_in']))
 	header("location:index.php");
 }
 include("header.php");
-$query = "SELECT * FROM product";
+echo $query = "SELECT * FROM product";
 $result = mysqli_query($con, $query);
+
+
 ?>
 
 
