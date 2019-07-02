@@ -1,9 +1,9 @@
 
 <div class="container-fluid">
-	<img id="img1"src="../1.jpg"class="rounded-circle  ml-4 "/>
-	<img  id="img2"src="../2.jpg"class="rounded-circle  ml-4"/>
-	<img  id="img3"src="../3.jpg"class="rounded-circle  ml-4"/>
-	<img  id="img4"src="../4.jpg"class="rounded-circle  ml-4"/>	
+	<img id="img1"src="../htmlcss/1.jpg"class="rounded-circle  ml-4 "/>
+	<img  id="img2"src="../htmlcss/2.jpg"class="rounded-circle  ml-4"/>
+	<img  id="img3"src="../htmlcss/3.jpg"class="rounded-circle  ml-4"/>
+	<img  id="img4"src="../htmlcss/4.jpg"class="rounded-circle  ml-4"/>	
 </div>
 <div class="container-fluid bg-dark">
 	<div class="row">
