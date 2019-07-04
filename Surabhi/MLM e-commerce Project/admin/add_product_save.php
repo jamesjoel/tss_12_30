@@ -18,7 +18,7 @@ if($ext == "jpg" || $ext == "jpeg" || $ext == "png" || $ext == "gif")
 
 		extract($_POST);
 			
-		$query="INSERT INTO product(p_name, p_cata, p_image, price, descount, detail) value('$product','$catagry','$new_name','$price','$discount','$detail')";
+		$query="INSERT INTO product(p_name, p_cata, p_img, price, descount, detail) value('$product','$catagry','$new_name','$price','$discount','$detail')";
 
 		mysqli_query($con, $query);
 		echo "submitted";

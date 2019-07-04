@@ -19,11 +19,42 @@ $url = $_SERVER['REQUEST_URI'];
 	<title></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css"> 
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"> 
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+	<?php
+	$get_all_obj = mysqli_query($con, "SELECT * FROM product");
+
+	$str="";
+	while($get_all_data=mysqli_fetch_assoc($get_all_obj))
+	{
+		$str .= "'".$get_all_data['product_name']."',";
+	}
+
+	$new_str = rtrim($str, ",");
+
+
+	?>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var arr =  [ <?php echo $new_str ?>];
+
+
+
+			$( "#q" ).autocomplete({
+      			source: arr
+    		});
+
+
+    		
+		});
+	</script>
 </head>
 <body>
 	<div class="conatiner-fluid header-bg">
@@ -106,7 +137,7 @@ $url = $_SERVER['REQUEST_URI'];
 	</div>
 	<form class="form-inline" action="index.php" method="get">
 	<div class="form-group">
-		<input type="text" placeholder="Keyword" class="form-control" name="q">
+		<input type="text" id="q" placeholder="Keyword" class="form-control" name="q">
 		<input type="submit" value="Search" class="btn btn-dark">
 	</div>
 	</form>
