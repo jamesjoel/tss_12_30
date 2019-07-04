@@ -30,7 +30,7 @@ if(mysqli_num_rows($result)==1)
 			{
 			$_SESSION['name']=$data['name'];
 			$_SESSION['id']=$data['id'];
-			$_SESSION['is_user_logged_in']=true;
+			$_SESSION['is_admin_logged_in']=true;
 	/*		echo "yes";*/
 			header("location:dashboard.php");
 			}

@@ -23,7 +23,7 @@
 			<li class="nav-item "><a class="nav-link" href="view_product.php">View Product</a>	</li>
 			<li class="nav-item "><a class="nav-link" href="add_catagory.php">Add Catagory</a>	</li>
 			<li class="nav-item "><a class="nav-link" href="views_cata.php">View Catagory</a>	</li>
-			<li class="nav-item "><a class="nav-link" href="#">Views Users</a>	</li>
+			<li class="nav-item "><a class="nav-link" href="view_user.php">Views Users</a>	</li>
 			<li class="nav-item "><a class="nav-link" href="#">Setting</a>	</li>
 			<li class="nav-item "><a class="nav-link" href="logout.php">Logout</a>	</li>
 			
