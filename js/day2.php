@@ -9,10 +9,7 @@
 			alert(a);
 			a++;
 		}
-
-
-
-	</script>
+</script>
 </head>
 <body>
 
