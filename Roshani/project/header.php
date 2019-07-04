@@ -23,8 +23,26 @@ $url = $_SERVER['REQUEST_URI']
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="imghover.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+	<script type="text/javascript"src="js/jquery-ui.js"></script>
+	<?php 
+	$get_obj = mysqli_query($conn,"SELECT * FROM save_product");
+	$get_data = mysqli_fetch_assoc($get_obj);
+	 $a .="'".$get_data["product_name"]."',";
+
+
+	?>
+	<script type="text/javascript">
+		$(document).ready(function(){
+    var arr = ["$a"];
+			$( "#search" ).autocomplete({
+     		 source: arr
+    });
+
+		});
+	</script>
 </head>
 <body class="m-0 p-0">
 	<div class="container-fluid">
@@ -113,7 +131,7 @@ $url = $_SERVER['REQUEST_URI']
 		</div>
 		<form class="form-inline" action="index.php" method="get">
 	<div class="form-group">
-		<input type="text" placeholder="Keyword" class="form-control" name="q">
+		<input type="text" placeholder="Keyword" id="search" class="form-control" name="q">
 		<input type="submit" value="Search" class="btn btn-dark">
 	</div>
 	</form>
