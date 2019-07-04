@@ -9,53 +9,51 @@ if(! isset($_SESSION['is_admin_logged_in']))
  include("admin_header.php");
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
-</head>
-<body>
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-	  <!-- Brand -->
-	  <a class="navbar-brand" href="#">Admin Panel</a>
+<div class="container" style="min-height: 600px;">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+		<h2>Add New Product</h2>
+		<form action="save_product.php" method="post">
+			
+		<div class="card">
+			<div class="card-header">
+				<h3>Product Detail</h3>
+			</div>
+			<div class="card-body">
+				<div class="form-group">
+					<label>Product Name</label>
+					<input type="text" name="product_name" class="form-control">
+				</div>
+				<div class="form-group">
+					<label>Product Category</label>
+					<select class="form-control" name="product_category">
+						<option>Select</option>
+						<option>Mobile</option>
+						<option>Electronics</option>
+						<option>Home Appliance</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label>Product Price</label>
+					<input type="text" name="product_price" class="form-control">
+				</div>
+				<div class="form-group">
+					<label>Discount</label>
+					<input type="text" name="discount" class="form-control">
+				</div>
+				<div class="form-group">
+					<label>Product Detail</label>
+					<textarea class="form-control" name="detail"></textarea>
+				</div>
 
-	  <!-- Toggler/collapsibe Button -->
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-
-	  <!-- Navbar links -->
-	  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-	    <ul class="navbar-nav">
-	      <li class="nav-item">
-	        <a class="nav-link" href="dashboard.php">Dashboard</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="add_product.php">Add Product</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="view_product.php">View Product</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="add_category.php">Add Category</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="view_category.php">View Category</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="users.php">Users</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="logout.php">Logout</a>
-	      </li>
-	      
-	    </ul>
-	  </div> 
-	</nav>
+			</div>
+			<div class="card-footer">
+				<input type="submit" value="Add" class="btn btn-primary">
+			</div>
+		</div>
+		</form>
+		</div>
+		</div>
+	</div>
+</body>
+</html>

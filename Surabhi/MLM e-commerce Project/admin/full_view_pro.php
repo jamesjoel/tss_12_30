@@ -5,10 +5,9 @@ if(! isset($_SESSION['is_admin_logged_in']))
 	header("location:index.php");
 }
 include("header.php");
-$query = "SELECT * FROM, product.id as eid from product INNER JOIN catagory On product.p_cata=catagory.id";
+$a=$_GET['pid'];
+$query = "SELECT * FROM product where ";
 $result = mysqli_query($con, $query);
-
-print_r($result);
 
 
 ?>
@@ -31,22 +30,14 @@ print_r($result);
 					</tr>
 					<?php
 					$n=1;
-					/*while (*/
-					$data = mysqli_fetch_assoc($result);
-						print_r($data);
-
-					{ 
-					?>
-						
+					while($data = mysqli_fetch_assoc($result))
+					{ ?>
 						<tr>
 							<td><?php echo $n; ?></td>
 							<td><?php echo $data['p_name'];?></td>
 							<td><?php echo $data['price'];?></td>
-							<td><?php echo $data['catagory_name'];?></td>
+							<td><?php echo $data['p_cata'];?></td>
 							<td><img src="image/<?php echo $data['p_img']; ?>" height="100" width="100"/></td>
-							<td><a href="full_view_pro.php?pid=<?php echo $data['pid']; ?>"class="btn btn-info btn-sm">View</a></td>
-							<td><a href="#" class="btn btn-warning btn-sm">Edit</a></td>
-							<td><a href="#" class="btn btn-danger btn-sm">Delete</a></td>
 						</tr>
 					<?php 
 					$n++;
