@@ -11,9 +11,43 @@ $url = $_SERVER['REQUEST_URI'];
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css"> 
 	
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+<!-- code for use in serching name in search bar -->
+	<?php
+	$get_all_obj = mysqli_query($con, "SELECT * FROM product");
+
+	$str="";
+	while($get_all_data=mysqli_fetch_assoc($get_all_obj))
+	{
+		$str .= "'".$get_all_data['product_name']."',";
+	}
+
+	$new_str = rtrim($str, ",");
+
+
+	?>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var arr =  [ <?php echo $new_str ?>];
+
+
+
+			$( "#q" ).autocomplete({
+      			source: arr
+    		});
+
+
+    		
+		});
+	</script>
+
+
 </head>
 <body>
 	<div class="conatiner-fluid header-bg">
