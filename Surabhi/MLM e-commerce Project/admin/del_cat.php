@@ -1,5 +1,6 @@
 <?php
 include('../dbconnection.php');
+include('backpro_admin.php');
 $pid=$_GET['pid'];
 /*echo $pid;
 die;*/
