@@ -24,19 +24,25 @@ $url = $_SERVER['REQUEST_URI']
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="imghover.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
 	<script type="text/javascript"src="js/jquery-ui.js"></script>
 	<?php 
 	$get_obj = mysqli_query($conn,"SELECT * FROM save_product");
-	$get_data = mysqli_fetch_assoc($get_obj);
+	$a="";
+	while($get_data = mysqli_fetch_assoc($get_obj))
+	{
 	 $a .="'".$get_data["product_name"]."',";
+	}
+	$b = rtrim($a,",");
 
 
 	?>
 	<script type="text/javascript">
 		$(document).ready(function(){
-    var arr = ["$a"];
+    var arr = [<?php echo $b?>];
 			$( "#search" ).autocomplete({
      		 source: arr
     });

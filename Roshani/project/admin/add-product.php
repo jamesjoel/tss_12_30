@@ -13,7 +13,7 @@ $result = mysqli_query($conn, $query);
 <div class="container bg-danger">
 		<div class="row">
 			<div class="col-md-6 offset-md-3">
-				<form action="" method="post"enctype="multipart/form-data" id="add_pro">
+				<form action="save.php" method="post"enctype="multipart/form-data" id="add_pro">
 					<div class="card" style="margin-top:100px">
 						<div class="card-header"><h2>Add Product</h2></div>
 						<div class="card-body">
