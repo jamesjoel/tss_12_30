@@ -1,4 +1,25 @@
 $(document).ready(function(){
+	$("#username").blur(function(){
+		var user = $(this).val();
+		var reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		if(user != "" && reg.test(user)==true)
+		{
+			$.ajax({
+				type : "post",
+				url : "check_username.php",
+				data : { username : user},
+				success : function(res){
+					$("#username_msg").html(res);
+				}
+			})
+		}
+
+
+	});
+
+
+
+
 	$("#signup-frm").submit(function(){
 		var a = $("#full_name").val();
 		var b = $("#username").val();
