@@ -1,3 +1,25 @@
-<div class="jumbotron mb-0"><h1>Mobile Phone</h1><p>Mobile phones are no more merely a part of our lives. Whether it's to stay connected with friends and family or to keep abreast of important developments around the world, mobiles are no longer for sending a text or making a call. From budget to state-of-the-art smartphones; indigenous names to global big-wigs - a whole universe of mobiles await you on Flipkart. Whether you’re looking for waterdrop notch screens, a high screen to body ratio, AI-powered sensational cameras, high storage capacity, blazing quick processing engines or reflective glass designs, rest assured you won’t have to venture anywhere else for your smartphone needs. Our phones start from 399 Rupees and go up to 1,00,000+ Rs. The latest best-selling models in the market include the Google Pixel 3A, Google Pixel 3A XL, Redmi Note 7S, Realme 3 Pro, Honor 9N, Honor 10 Lite, Samsung Galaxy S10, Oppo K1, Redmi Note 7 Pro, Oppo F9 Pro Asus Zenfone Max Pro M2 and Vivo V15 Pro. Find detailed synopses of mobiles on our page that call out important features and USPs, enabling you to choose basis your requirement. The information you are reading has been last updated on 01-Jun-19.</p>
 
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.slider').bxSlider({
+      captions:true,
+      auto : true,
+      pause:1000
+    });
+  });
+</script>
+<style type="text/css">
+  .slider-bg{
+      background-size:100% 100%;
+      height: 300px ;
+   /*   background-image: url("../image/1.jpg");
+       background-repeat: no-repeat;*/
+  }
+  
+</style>
+<div class="slider jumbotron jumbotron-fluid slider-bg m-0 p-0">
+    <div><img src="images/1.jpg" height="200" title="Funky roots"></div>
+    <div><img src="images/2.png" height="200" title="Funky roots"></div>
+    <div><img src="images/3.jpg" height="200" title="Funky roots"></div>
+      
 </div>
