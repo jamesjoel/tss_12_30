@@ -12,6 +12,18 @@ else
 	$total_item = 0;
 }
 $url = $_SERVER['REQUEST_URI'];
+
+$theme_name="css/style.css";
+
+if(isset($_SESSION['is_user_logged_in']))
+{
+	$theme_res = mysqli_query($con, "SELECT * FROM user WHERE id = ".$_SESSION['id']);
+	$theme_arr = mysqli_fetch_assoc($theme_res);
+
+	$theme_name=$theme_arr['theme'];
+}
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,7 +34,7 @@ $url = $_SERVER['REQUEST_URI'];
 	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css"> 
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"> 
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link id="css_link" rel="stylesheet" type="text/css" href="<?php echo $theme_name; ?>">
 	
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
@@ -74,6 +86,9 @@ $url = $_SERVER['REQUEST_URI'];
 							</li>
 							<li class="nav-item">
 								<a href="my_profile.php" class="nav-link text-light">My Profile </a>
+							</li>
+							<li class="nav-item">
+								<a href="theme.php" class="nav-link text-light">Themes </a>
 							</li>
 							<li class="nav-item">
 								<a href="logout.php" class="nav-link text-light">Logout <i class="fa fa-user"></i></a>
