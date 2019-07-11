@@ -1,5 +1,5 @@
 <?php
 session_start();
-$con = mysqli_connect("localhost", "admin", "admin", "tss_12_30");
+$con = mysqli_connect("localhost", "root", "password", "tss_12_30");
 
 ?>
