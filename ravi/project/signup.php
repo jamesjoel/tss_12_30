@@ -1,7 +1,7 @@
 <?php
 include("db.php");
 include("header.php");
-//include("slider.php");
+// include("slider.php");
 ?>
 <script type="text/javascript" src="js/val.js"></script>
 <div class="conatiner-fluid">
@@ -44,7 +44,7 @@ include("header.php");
 							<div class="card-body">
 								<div class="form-group">
 									<label>Full Name</label>
-									<input type="text" name="full_name" id="full_name" class="form-control">
+									<input type="text" id="full_name" name="full_name" class="form-control">
 									<small class="text-danger" id="full_name_msg"></small>
 								</div>
 								<div class="form-group">
@@ -64,14 +64,15 @@ include("header.php");
 								</div>
 								<div class="form-group">
 									<label>Address</label>
-									<textarea name="add" class="form-control" id="add"></textarea>
+									<textarea name="add" id="add" class="form-control"></textarea>
 									<small class="text-danger" id="add_msg"></small>
 								</div>
 								<div class="form-group">
 									<label>Gender</label>
 									<Br />
-									Male <input type="radio" value="male" name="gender" id="male">
-									Female <input type="radio" value="female" name="gender" id="female"><br>
+									Male <input type="radio" id="male" value="male" name="gender">
+									Female <input type="radio" id="female" value="female" name="gender">
+									<br/>
 									<small class="text-danger" id="gender_msg"></small>
 								</div>
 								<div class="form-group">
@@ -88,13 +89,13 @@ include("header.php");
 								</div>
 								<div class="form-group">
 									<label>Contact</label>
-									<input type="text" name="contact" class="form-control" id="contact">
+									<input type="text" name="contact" id="contact" class="form-control">
 									<small class="text-danger" id="contact_msg"></small>
 								</div>
 								<div class="form-group">
 									<input type="checkbox" name="agree" id="agree">
-									I Agree Terms and Conditions.<br>
-									<small class="text-danger" id="agree_msg"></small>
+									I Agree Terms and Conditions.
+									<Br /><small class="text-danger" id="agree_msg"></small>
 								</div>
 							</div>
 							<div class="card-footer">
