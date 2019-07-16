@@ -7,7 +7,7 @@
 	   //form Submit
 	   $(document).ready(function(){
 
-	   $("#myfrm").submit(function(e){	 
+	   $("#file").change(function(e){	 
 	      
 	      e.preventDefault();
 
@@ -27,9 +27,9 @@
 	       processData: false,
         	contentType: false,
 	       success: function (response) {
-	         alert(response);
-	         // $("#up_img").css({"display" : "block"});
-	         // $("#up_img").attr("src", response);
+	         // alert(response);
+	         $("#up_img").css({"display" : "block"});
+	         $("#up_img").attr("src", response);
 
 	       }
 	   }); 
@@ -42,8 +42,8 @@
 	<form id="myfrm">
 		Select File <input type="file" id="file" />
 		<Br />
-		<input type='text' name="f_name" id="f_name"/>
-		<input type="submit" value="Upload">
+		
+		
 	</form>
 	<img src="" style="display: none;" id="up_img" height="200" width="200" />
 </body>
