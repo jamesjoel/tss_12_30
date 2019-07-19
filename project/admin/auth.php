@@ -1,4 +1,5 @@
 <?php
+print_r($_SERVER);die;
 include("../db.php");
 $u = $_POST['username'];
 $p = $_POST['password'];
