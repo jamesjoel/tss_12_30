@@ -34,7 +34,7 @@ include("slider.php");
 			<div class="col-md-9">
 			<form action="auth.php" method="post">
 				
-			<h3>User Login</h3>
+			<h3 style="text-align: center;">User Login</h3>
 				<div class="row">
 					<div class="col-md-8 offset-md-2">
 						<div class="card mb-4 shadow">

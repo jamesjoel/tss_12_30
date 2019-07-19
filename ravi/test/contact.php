@@ -1,0 +1,20 @@
+
+<?php
+include("db.php");
+include("header.php");
+include("slider.php");
+
+?>
+<div class="container-fluid content-bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="text-dark" style="text-align: center;">This is contact page</h3>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<?php
+include("footer.php");
+?>
