@@ -93,7 +93,7 @@ include("header.php");
 									<small class="text-danger" id="contact_msg"></small>
 								</div>
 								<div class="form-group">
-									<input type="checkbox" name="agree" id="agree">
+									<input type="checkbox" name="agree" id="agree_msg">
 									I Agree Terms and Conditions.
 									<Br /><small class="text-danger" id="agree_msg"></small>
 								</div>
